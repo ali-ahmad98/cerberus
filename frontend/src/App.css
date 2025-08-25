@@ -1,0 +1,3108 @@
+@font-face {
+  font-family: Gilroy-normal;
+  src: url("./Assets//Gilroy/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-medium;
+  src: url("./Assets/Gilroy/Gilroy-Medium.ttf");
+}
+
+.opacity_07 {
+  opacity: 0.7;
+}
+
+/* team-css */
+.letter_spacing {
+  letter-spacing: 5px;
+}
+
+.follow_btn {
+  padding: 9px 20px;
+  color: #3d98d1;
+  border: 1px solid #3d98d1 !important;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.follow_btn:hover {
+  color: white;
+  background-color: #3d98d1;
+}
+
+.injuries_table {
+  table-layout: fixed;
+}
+
+/* .table_texts {
+  padding-right: 210px;
+} */
+.follow-texts {
+  margin-top: -100px;
+}
+
+.table_data {
+  border: 1px solid #bdbec0;
+  /* width: 33%; */
+}
+
+.table_data_third {
+  border: 1px solid #bdbec0;
+  /* width: 33%; */
+}
+
+.table_second_data {
+  width: 30.5%;
+}
+
+/* team-css-end */
+.ff-gilroy-normal {
+  font-family: Gilroy-normal !important;
+}
+
+.ff-gilory-medium {
+  font-family: Gilroy-medium !important;
+}
+
+.text-very-light-gray {
+  color: var(--color-very-light-gray);
+}
+
+.text-light-gray {
+  color: var(--color-grey);
+}
+
+.text-light-blue {
+  color: var(--color-blue) !important;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+/* body {
+  background-color: #000000 !important;
+} */
+
+.quick-link-button {
+  background: linear-gradient(100deg, #2e9dd547 10%, #0b3c754f 100%) 0% 0%;
+  border: 0;
+  color: var(--color-white);
+  transform: skew(-10deg);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  font-size: var(--font-13);
+  max-width: 350px;
+}
+
+.quick-link-button:hover {
+  background: linear-gradient(100deg, #2e9cd5 0%, #0b3c75 100%);
+}
+
+.quick-link-button span {
+  transform: skew(10deg);
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.top-heading-floating-text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.right-arrow-icon {
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
+  transform: rotate(90deg);
+  transition: 0.3s ease;
+}
+
+.social-link {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.mail-footer-link {
+  transition: 0.3s ease;
+  text-decoration: none !important;
+}
+
+.mail-footer-link:hover {
+  opacity: 1;
+  text-decoration: none !important;
+  color: var(--color-white) !important;
+}
+
+.footer-tel-link {
+  transition: 0.3s ease;
+  /* text-decoration: none !important; */
+}
+
+.footer-tel-link:hover {
+  opacity: 0.7;
+}
+
+.footer-links-hover:hover {
+  color: var(--color-light-blue) !important;
+}
+
+.score-board-table-img img {
+  background: var(--color-white);
+  padding: 0 10px;
+  height: 42px;
+  width: 60px;
+  object-fit: contain;
+  transform: skew(-5deg);
+  position: relative;
+  z-index: 1;
+}
+
+.score-board-table-img::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%) skew(-5deg);
+  background-color: var(--color-light-blue);
+  left: -30%;
+  width: 100%;
+  height: 80%;
+  z-index: 0;
+}
+
+.score-board-table-img-2 img {
+  background: var(--color-white);
+  padding: 0 10px;
+  height: 42px;
+  width: 60px;
+  object-fit: contain;
+  transform: skew(-5deg);
+  position: relative;
+  z-index: 1;
+}
+
+.score-board-table-img-2::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%) skew(-5deg);
+  background-color: #0f4479;
+  left: -30%;
+  width: 100%;
+  height: 80%;
+  z-index: 0;
+}
+
+.bg-light-black {
+  background-color: var(--color-light-black);
+}
+
+.bg-light-grey {
+  background-color: var(--color-light-grey);
+}
+
+.floating-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.scoreboard-bg {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.draft-page-bg {
+  background-image: url("./Assets/img/team-hero-bg.png");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  z-index: 1;
+  min-height: 80vh;
+}
+
+.draft-page-bg::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(180deg, #000000a9 0%, #000000 110%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.draft-page-bg::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: blur(20px);
+  bottom: -44px;
+  left: 0;
+  width: 100%;
+  height: 167px;
+  z-index: -1;
+}
+
+.pt-10-rem {
+  padding-top: 10rem;
+}
+
+.depth-chart-table table tbody td {
+  border-right: 0.9px solid var(--color-very-light-gray) !important;
+  white-space: nowrap;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.depth-chart-table table thead th {
+  border-right: 0.9px solid var(--color-very-light-gray) !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.depth-chart-table table tbody tr {
+  border-bottom: 0.9px solid var(--color-very-light-gray) !important;
+}
+
+.depth-chart-table .table > tbody > tr > td,
+.depth-chart-table .table > tbody > tr > th,
+.depth-chart-table .table > tfoot > tr > td,
+.depth-chart-table .table > tfoot > tr > th,
+.depth-chart-table .table > thead > tr > td,
+.depth-chart-table .table > thead > tr > th {
+  vertical-align: middle !important;
+}
+
+.injuries-table-middle .table > tbody > tr > td,
+.injuries-table-middle .table > tbody > tr > th,
+.injuries-table-middle .table > tfoot > tr > td,
+.injuries-table-middle .table > tfoot > tr > th,
+.injuries-table-middle .table > thead > tr > td,
+.injuries-table-middle .table > thead > tr > th {
+  vertical-align: middle !important;
+}
+
+/* === range theme and appearance === */
+
+.prodcast-range input[type="range"] {
+  font-size: 1.5rem;
+}
+
+.focus-none:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.prodcast-range-div {
+  background-color: #70707074;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.prodcast-range input[type="range"] {
+  color: var(--color-blue);
+  --thumb-height: 15px;
+  --track-height: 4px;
+  --track-color: #707070;
+  --brightness-hover: 110%;
+  --brightness-down: 80%;
+  --clip-edges: 0.125em;
+}
+
+.prodcast-range input[type="range"].win10-thumb {
+  color: #2b2d42;
+  --thumb-height: 1.375em;
+  --thumb-width: 0.5em;
+  --clip-edges: 0.0125em;
+}
+
+/* === range commons === */
+.prodcast-range input[type="range"] {
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+}
+
+.prodcast-range input[type="range"]:active {
+  cursor: grabbing;
+}
+
+.prodcast-range input[type="range"]:disabled {
+  filter: grayscale(1);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* === WebKit specific styles === */
+.prodcast-range input[type="range"],
+.prodcast-range input[type="range"]::-webkit-slider-runnable-track,
+.prodcast-range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  transition: all ease 100ms;
+  height: var(--thumb-height);
+}
+
+.prodcast-range input[type="range"]::-webkit-slider-thumb {
+  --thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+  --clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+  --clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+  --clip-further: calc(100% + 1px);
+  --box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0 100vmax currentColor;
+
+  width: var(--thumb-width, var(--thumb-height));
+  background: linear-gradient(currentColor 0 0) scroll no-repeat left center / 50%
+    calc(var(--track-height) + 1px);
+  background-color: currentColor;
+  box-shadow: var(--box-fill);
+  border-radius: var(--thumb-width, var(--thumb-height));
+
+  filter: brightness(100%);
+  clip-path: polygon(
+    100% -1px,
+    var(--clip-edges) -1px,
+    0 var(--clip-top),
+    -100vmax var(--clip-top),
+    -100vmax var(--clip-bottom),
+    0 var(--clip-bottom),
+    var(--clip-edges) 100%,
+    var(--clip-further) var(--clip-further)
+  );
+}
+
+.prodcast-range input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(var(--track-color) 0 0) scroll no-repeat center / 100%
+    calc(var(--track-height) + 1px);
+}
+
+.prodcast-range input[type="range"]:disabled::-webkit-slider-thumb {
+  cursor: not-allowed;
+}
+
+.prodcast-pause-img {
+  position: absolute;
+  right: -15%;
+  top: 50%;
+  transform: translate(15%, -50%);
+  cursor: pointer;
+  max-width: 100px;
+  width: 50%;
+  transition: 0.3s ease;
+}
+
+.prodcast-play-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  max-width: 55px;
+  width: 50%;
+  z-index: 1;
+}
+
+.bg-overlay::after {
+  position: absolute;
+  content: "";
+  background-color: #2b87bc76;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  transform: translate(-50%, -50%);
+}
+
+.bg-overlay {
+  max-width: 170px;
+}
+
+.prodcast-pause-img {
+  max-width: 75px;
+  width: 100%;
+}
+
+.prodcast-heading {
+  background: linear-gradient(97deg, #2e9cd5 0%, #0b3c75 100%) 0% 0%;
+  max-width: 900px;
+  margin: auto;
+  transform: skewX(-15deg);
+}
+
+.prodcast-heading h2 {
+  transform: skewX(0deg);
+}
+
+.mw-custom {
+  max-width: 150px;
+}
+
+.mw-1050 {
+  max-width: 1050px;
+}
+
+.min-w-40 {
+  min-width: 40px;
+}
+
+.mw-200 {
+  max-width: 200px !important;
+}
+
+.custom-table-border th,
+.custom-table-border td {
+  border: 1px solid var(--color-grey);
+}
+
+.border-top-custom {
+  border-top: 1px solid var(--color-grey);
+}
+
+.border-right-custom {
+  border-right: 0.9px solid var(--color-grey) !important;
+}
+
+.border-left-custom {
+  border-left: 0.9px solid var(--color-grey) !important;
+}
+
+.bg-very-light-gray {
+  background-color: #f8f8f8;
+}
+
+.blue-rectangle {
+  display: inline-block;
+  background-color: #2e9cd5;
+  width: 15px;
+  height: 20px;
+}
+
+.table-blue-year {
+  background-color: var(--color-blue);
+  border-radius: 20px 0 0 20px;
+}
+
+.table-black-year {
+  background-color: var(--color-dark-gray);
+  border-radius: 0px 20px 20px 0px;
+  color: var(--color-grey);
+}
+
+.black-number-btn {
+  background-color: var(--color-dark-gray);
+  color: var(--color-grey);
+  border-radius: 30px;
+  border: 0;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  vertical-align: sub;
+}
+
+.lh-35 {
+  line-height: 35px !important;
+}
+
+.shadow-grey {
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.h-50px {
+  height: 50px;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.transform-skew-10 {
+  transform: skew(-10deg);
+}
+
+.transform-skew-10-revrse {
+  transform: skew(10deg);
+}
+
+.table-img {
+  max-width: 70px;
+}
+
+.ms-negative-12 {
+  margin-left: -12px;
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+.bg-very-light-grey {
+  background-color: #f8f8f8;
+}
+
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+select {
+  border-radius: 7px !important;
+}
+
+.hero-card-hover {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero-card-hover,
+.hero-card-hover img {
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-card-hover:hover .main-img1 {
+  transform: scale(1.2);
+}
+
+.hero-card-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-dark-blue);
+  opacity: 0.5;
+  width: 0%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-card-hover:hover::after {
+  width: 100%;
+}
+
+.hero-card-hover:hover .right-arrow img {
+  transform: translateX(5px);
+}
+
+.min-w-100 {
+  min-width: 100px;
+}
+
+.min-w-130 {
+  min-width: 130px;
+}
+
+.btn:active {
+  background: linear-gradient(#2e9cd5 0%, #0b3c75 100%);
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.height-25vh {
+  height: 25vh;
+}
+
+.form-select {
+  background-size: 23px;
+  max-width: 350px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' strokeLinecap='round' strokeLinejoin='round' stroke-width='1' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.form-select:focus {
+  border: 1px solid transparent;
+}
+
+.ms-negative-23 {
+  margin-left: -20px;
+}
+
+.table-small-bg {
+  background: url("./Assets/table-small-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gamecast-btn {
+  background-color: transparent;
+  border: 2px solid var(--color-blue);
+  color: var(--color-blue);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.gamecast-btn:hover {
+  transform: scale(1.1);
+}
+
+.border-left-custom {
+  border-left: 1px solid var(--color-very-light-gray);
+}
+
+.scoreboard-table .table > thead > tr > th {
+  border-bottom: 0;
+}
+
+.scoreboard-table .table > :not(:first-child) {
+  border: 0;
+}
+
+.scoreboard-table .table > tbody > tr > th,
+.scoreboard-table .table > tfoot > tr > td,
+.scoreboard-table .table > tfoot > tr > th,
+.scoreboard-table .table > thead > tr > td,
+.scoreboard-table .table > thead > tr > th,
+.scoreboard-table .table > tbody > tr > td,
+.scoreboard-table .table > tbody > tr > th,
+.scoreboard-table .table > tfoot > tr > td,
+.scoreboard-table .table > tfoot > tr > th,
+.scoreboard-table .table > thead > tr > td,
+.scoreboard-table .table > thead > tr > th {
+  border: 0;
+}
+
+.standing-table .table-img {
+  max-width: 100px;
+}
+
+.min-width-200 {
+  min-width: 200px;
+}
+
+.min-width-20 {
+  min-width: 20px;
+}
+
+.min-width-50 {
+  min-width: 50px;
+}
+
+.min-width-140 {
+  min-width: 140px;
+}
+
+.mw-250 {
+  max-width: 250px;
+}
+
+.draft-table-body-wrapper,
+.draft-table-head-wrapper,
+.draft-table-list-items {
+  min-width: 630px;
+}
+
+.min-width-250 {
+  min-width: 250px;
+}
+
+.min-width-300 {
+  min-width: 300px;
+}
+
+.min-width-150 {
+  min-width: 150px;
+}
+
+.min-width-55 {
+  min-width: 55px;
+}
+
+.scoreboard-table .table > tbody > tr > td,
+.scoreboard-table .table > tbody > tr > th,
+.scoreboard-table .table > tfoot > tr > td,
+.scoreboard-table .table > tfoot > tr > th,
+.scoreboard-table .table > thead > tr > td,
+.scoreboard-table .table > thead > tr > th {
+  vertical-align: middle;
+}
+
+.scoreboard-table .table-img {
+  max-width: 100px;
+}
+
+.player-profile-table td {
+  line-height: 81px !important;
+}
+
+.links-hover:hover {
+  color: var(--color-blue) !important;
+}
+
+.links-hover:hover svg line,
+.links-hover:hover svg circle,
+.links-hover:hover svg rect,
+.links-hover:hover svg path {
+  stroke: var(--color-blue);
+}
+
+.card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover svg {
+  transform: translateY(-5px);
+}
+
+.scale-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.scale-hover:hover {
+  transform: scale(1.2);
+}
+
+.border-radius-15 {
+  border-radius: 15px;
+}
+
+.layout-fixed {
+  table-layout: fixed;
+}
+
+.w-xs-25 {
+  width: 20%;
+}
+
+.border-custom-after {
+  position: relative;
+}
+
+.border-custom-after::after {
+  position: absolute;
+  content: "";
+  bottom: -23px;
+  width: 100%;
+  left: 0;
+  height: 0.5px;
+  background-color: var(--color-very-light-gray);
+}
+
+/*============================== GAME'S CSS ADDED HERE  ==============================*/
+
+.color-grey {
+  color: var(--color-grey) !important;
+}
+
+.color-red {
+  color: var(--color-red) !important;
+}
+
+.color-green {
+  color: var(--color-green) !important;
+}
+
+.gamelog-table table {
+  background-color: var(--color-white);
+}
+
+.gamelog-table table th {
+  color: var(--color-black);
+}
+
+.tablehead-tr th,
+td {
+  text-align: center;
+}
+
+.gamelog-tr th,
+.gamelog-tr td {
+  text-align: center;
+  white-space: nowrap;
+  line-height: 50px !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--color-white) !important;
+  --bs-table-accent-bg: var(--color-white);
+}
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: #f8f8f8 !important;
+  --bs-table-accent-bg: #f8f8f8;
+}
+
+.tr-border-left {
+  border-left: 1px solid var(--color-grey);
+}
+
+.gameblog-headings {
+  background: linear-gradient(97deg, #2e9cd5 0%, #0b3c75 100%) 0% 0%;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.gamelog-select {
+  max-width: 300px;
+}
+
+/* ================================ 07 NFL_SCOREBOARD ========================================== */
+.scoreboard-page-bg {
+  background-image: url("./Assets/player-profile-bg-image.png");
+  background-size: cover;
+  position: relative;
+  background-position-y: center;
+  z-index: 1;
+}
+
+.scoreboard-page-bg::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(180deg, #000000a9 0%, #000000 110%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.scoreboard-page-bg::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: blur(20px);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.small-icons {
+  right: 10px;
+  bottom: 10px;
+}
+
+.small-icons svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.small-icons svg:hover {
+  transform: scale(1.3);
+}
+
+.underline-hover span {
+  position: relative;
+}
+
+.underline-hover span::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  bottom: -2px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline-hover span:hover::after {
+  width: 100%;
+}
+
+/* ================================ 07 NFL_SCOREBOARD ENDS ===================================== */
+
+/* ================================ FANTACY-FOOTBALL-STATS  ===================================== */
+.gradient-bg {
+  background: linear-gradient(97deg, #2e9cd5 0%, #0b3c75 100%) 0% 0%;
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+.skew-img1::after {
+  content: "";
+  position: absolute;
+  background: url("./Assets/fantasy-table-small-img.png");
+  height: 103%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 20px !important;
+  left: -19.5px;
+  top: -2px;
+  z-index: -1;
+}
+
+.skew-img::before {
+  content: "";
+  position: absolute;
+  background: url("./Assets/fantasy-table-small-img-2.png");
+  height: 110%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 20px !important;
+  right: -19.5px;
+  top: 0px;
+  z-index: -1;
+}
+
+.bg-blue {
+  background-color: #175d92 !important;
+}
+
+.text-blue {
+  /* color: #2889bf !important; */
+  color: #3bb9ff !important;
+}
+
+.min-width-0 {
+  min-width: 0 !important;
+}
+
+.mw-518 {
+  max-width: 518px;
+}
+
+.fantasy-left {
+  position: absolute;
+  max-width: 400px;
+  top: 380px;
+  left: 5%;
+}
+
+.fantasy-right {
+  position: absolute;
+  max-width: 400px;
+  top: 170px;
+  right: 5%;
+  z-index: -1;
+  width: 100%;
+}
+.nfl-fantasy-right {
+  max-width: 370px;
+  top: 235px;
+  right: 10%;
+}
+
+.table-text-2 {
+  position: absolute;
+  top: -42px;
+  color: white;
+  padding: 12.7px 10px;
+  background: linear-gradient(97deg, #2e9cd5 0%, #0b3c75d0 100%) 0% 0%;
+  left: 7px;
+  width: 800px;
+  transform: skew(-25deg);
+  z-index: -1;
+}
+
+.table-text-2 span {
+  transform: skew(25deg);
+  display: inline-block;
+}
+
+.table-text-3 {
+  position: absolute;
+  top: -42px;
+  color: white;
+  padding: 12.7px 10px;
+  border-left: 1px solid var(--color-very-light-gray);
+  left: -1px;
+  text-align: center;
+}
+
+.table-text-4 {
+  position: absolute;
+  top: -42px;
+  color: white;
+  padding: 12.7px 10px;
+  border-left: 1px solid var(--color-very-light-gray);
+  left: -1px;
+}
+
+.table-text-5 {
+  position: absolute;
+  top: -42px;
+  color: white;
+  padding: 12.7px 10px;
+  border-left: 1px solid var(--color-very-light-gray);
+  left: -1px;
+}
+
+.fantasy-btn {
+  background-color: black;
+  border: 1px solid #2889bf;
+  font-size: var(--font-16);
+  color: var(--color-white);
+  font-weight: 600;
+  padding: 6px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  min-width: 130px;
+}
+
+.fantasy-btn:hover {
+  background: #2889bf;
+}
+
+.mb-negative-50 {
+  margin-bottom: -50px;
+}
+
+.fantasy-stats .table > tbody > tr > td,
+.fantasy-stats .table > tbody > tr > th,
+.fantasy-stats .table > tfoot > tr > td,
+.fantasy-stats .table > tfoot > tr > th,
+.fantasy-stats .table > thead > tr > td,
+.fantasy-stats .table > thead > tr > th {
+  vertical-align: middle;
+}
+
+.fantasy-stats .table > tbody > tr > td {
+  line-height: 50.3px;
+}
+
+.fantasy-table-img {
+  max-width: 52px;
+  width: 100%;
+  border: 2px solid #247eb4;
+  border-radius: 50%;
+}
+
+.min-w-200 {
+  min-width: 200px;
+}
+
+.min-w-260 {
+  min-width: 260px;
+}
+
+.border-bottom-1px {
+  border-bottom: 1px solid var(--color-very-light-gray) !important;
+}
+
+.table-img-team {
+  max-width: 80px;
+}
+
+.bg-light-blue {
+  background-color: #2c94c9 !important;
+}
+
+.bg-light-blue2 {
+  background-color: #2e9cd5 !important;
+}
+
+.bg-light-blue3 {
+  background-color: #0e4177 !important;
+}
+
+.bg-dark-blue {
+  background-color: #01277f !important;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
+}
+
+.select-text {
+  position: absolute;
+  color: white;
+  top: -30px;
+  left: 43.5%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.select-text-2 {
+  position: absolute;
+  color: white;
+  top: -30px;
+  left: 73.5%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.py-xxl-custom {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+/* ================================ NflTeamDetailsTable ========================================== */
+.team-details-headings {
+  background: linear-gradient(97deg, #2e9cd5 0%, #0b3c75 100%) 0% 0%;
+  clip-path: polygon(3% 0%, 100% 0%, 95% 100%, 0% 100%);
+  min-width: 271px;
+  z-index: 1;
+  padding: 17px 16px;
+}
+
+.team-details-headings-2 {
+  color: black;
+  background: white !important;
+  clip-path: polygon(3% 0%, 100% 0%, 95% 100%, 0% 100%);
+  min-width: 271px;
+  margin-left: -16px;
+  z-index: 0;
+  padding: 17px 16px;
+}
+
+.min-w-251 {
+  min-width: 251px;
+}
+
+.min-w-56 {
+  min-width: 56px;
+}
+
+.min-w-101 {
+  min-width: 101px;
+}
+
+/* ================================ NflTeamDetailsTable ========================================== */
+/* ================================ NFL TEAM Detail (STATS) ====================================== */
+.custom-yard-leaders {
+  border: 1px solid #bdbec0;
+}
+
+.passing-yards {
+  min-width: 300px;
+  border-right: 1px solid #bdbec0;
+}
+
+.custom-yard-leaders::-webkit-scrollbar {
+  height: 5px;
+}
+
+.custom-yard-leaders::-webkit-scrollbar-thumb {
+  background-color: var(--color-blue) !important;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.custom-yard-leaders::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(0 0 0 / 30%) !important;
+  border-radius: 3px;
+}
+
+.stats-details-table table thead tr {
+  border-bottom: 1px solid #bdbec0 !important;
+}
+
+.stats-details-table table tbody tr td {
+  border: 0 !important;
+}
+
+.down-arrow-icon {
+  width: 17px;
+}
+
+.bg-color-white {
+  background-color: white !important;
+  --bs-table-accent-bg: white !important;
+}
+
+.nav_tabs_stats_btn {
+  padding: 13px 65px;
+  background: linear-gradient(#2e9cd5 0%, #0b3c75 100%);
+  color: white;
+  font-size: var(--font-22);
+  font-weight: 600 !important;
+  transform: skew(-7deg);
+  transition: 0.3s ease !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
+.nav_tabs_stats_btn span {
+  transform: skew(7deg);
+  display: inline-block;
+}
+
+.active-nav-btn-blue-stats {
+  padding: 16px 65px !important;
+  color: var(--color-white) !important;
+  transform: skew(-7deg) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-mb-minus {
+  margin-bottom: -7px;
+}
+
+.nfl-team-stats .gamelog-tr th,
+.nfl-team-stats .gamelog-tr td {
+  line-height: 69px !important;
+}
+
+.yds_col {
+  background-color: #e9f7ff !important;
+  --bs-table-accent-bg: #e9f7ff5e !important;
+  color: black !important;
+}
+
+.nfl-team-stats .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #e9f7ff !important;
+  /* --bs-table-accent-bg: #e9f7ff !important; */
+}
+
+.ncaaf-team-stats .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #e9f7ff !important;
+  /* --bs-table-accent-bg: #e9f7ff !important; */
+}
+
+.nfl-team-stats .table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: #dcedf6 !important;
+}
+
+.team-stats-bills .form-select {
+  width: 100%;
+  max-width: 300px !important;
+}
+
+.schedule-table tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: initial;
+}
+
+.sr-no-td {
+  width: 85px !important;
+}
+
+.date-table-td {
+  width: 216px !important;
+}
+
+.opponent-td {
+  width: 378px !important;
+}
+
+/* ================================ NFL TEAM Detail (STATS) ================================== */
+/* ================================ NCAAF-FRONT ============================================== */
+.ncaaf-front-hero-img {
+  /* background-image: url("./NcaafFront/Assets/img/ncaaaf-front-hero-img.png"); */
+  background-image: url("./Assets/NcaafFrontAssets/HomepageAssets/img/ncaaaf-front-hero-img.png");
+  background-size: cover;
+  /* min-height: calc(80vh - 120px); */
+}
+
+.hero-front-img {
+  margin-left: -35px;
+}
+
+.video-card-img {
+  min-width: 213px;
+}
+
+.front-video-card {
+  min-height: 267px;
+  /* background-image: url("./NcaafFront//Assets/img/videocard-bg.png") !important; */
+  background-image: url("./Assets/NcaafFrontAssets/HomepageAssets/img/videocard-bg.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-color: transparent !important;
+}
+
+.matchup-card {
+  transform: translateX(-65px);
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.trust {
+  border-top: 10px solid var(--color-blue);
+}
+
+.explore-btn {
+  background-image: url("./Assets/NcaafFrontAssets/HomepageAssets/img/explore-btn-bg.png");
+  width: 224px;
+  height: 47px;
+  background-size: 224px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+}
+
+.explore-btn:hover {
+  transform: scale(0.987);
+}
+
+.bg-black2 {
+  background-color: #1a1a1a !important;
+}
+
+.ncaaf-front-scoreboard-bg {
+  background: linear-gradient(97deg, #2e9cd5, #0b3c75) 0 0;
+  -webkit-clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  margin-top: -20px;
+}
+
+.quick-links-bg {
+  background: linear-gradient(97deg, #2e9cd5, #0b3c75) 0 0;
+  -webkit-clip-path: polygon(1% 0, 100% 0, 98% 100%, 0 100%);
+  clip-path: polygon(1% 0, 100% 0, 98% 100%, 0 100%);
+}
+
+/* ================================ NCAAF-FRONT ============================================== */
+.gamecast-btn {
+  border: 1px solid var(--color-blue) !important;
+  padding: 12px 25px;
+  line-height: 9px;
+}
+
+.custom-min-width {
+  min-width: 527px;
+}
+
+.custom-width-527 {
+  max-width: 527px;
+}
+
+.custom-width-400 {
+  max-width: 400px;
+}
+
+.place-text-border {
+  border-left: 2px solid var(--color-white);
+  border-right: 2px solid var(--color-white);
+}
+
+.table-small-bg {
+  position: relative;
+}
+
+.side-arrow-icon {
+  z-index: 5;
+  left: -15px;
+  margin-top: 15px;
+}
+
+.width-500 {
+  width: 500px;
+}
+
+.table-bg-line .table_bg::after {
+  width: 102.9%;
+  left: -24px;
+  height: 70px;
+}
+
+.custom_height {
+  height: 213px;
+}
+
+.height-70 {
+  height: 70px;
+}
+
+.custom-width-500 {
+  min-width: 500px;
+}
+
+.scoreboard-table .gamelog-table .table-responsive table {
+  width: 98% !important;
+}
+
+.scoreboard-table .gamelog-table table {
+  background-color: transparent !important;
+}
+
+.scoreboard-table .gamelog-table table tbody {
+  background-color: var(--color-white) !important;
+}
+
+.players-table table {
+  width: 98% !important;
+}
+
+.players-table table {
+  background-color: transparent !important;
+}
+
+.players-table table tbody {
+  background-color: var(--color-white) !important;
+}
+
+.min-height-68 {
+  min-height: 68px;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.scoreboardDotsImg {
+  right: 100px;
+  top: 360px;
+  z-index: 0;
+}
+
+.scoreboardLeftDotsImg {
+  left: -170px;
+  top: 90px;
+  width: 60%;
+  z-index: 0;
+}
+
+.frontscore-minus-mb {
+  margin-bottom: -10px;
+}
+
+.frontscore-heading-minus-mb {
+  margin-bottom: -8px;
+}
+
+.ncaaf-front-heading-bar {
+  min-height: 96px;
+}
+
+.tab-btn {
+  background: var(--color-white);
+}
+
+.tab-btn-padding {
+  padding: 10px 45px !important;
+}
+
+.prospect-heading,
+.american-heading {
+  transform: skew(-14deg);
+  color: var(--color-white);
+}
+
+.american-heading span,
+.prospect-heading span {
+  position: relative;
+}
+
+.american-heading span:nth-child(odd)::after {
+  position: absolute;
+  content: "";
+  bottom: -13px;
+  left: 4px;
+  width: 14px;
+  height: 7px;
+  transform: skew(-14deg);
+  background: var(--color-white);
+}
+
+.american-heading span:nth-child(even)::after {
+  position: absolute;
+  content: "";
+  bottom: -13px;
+  left: 5.5px;
+  width: 14px;
+  height: 7px;
+  transform: skew(-14deg);
+  background-color: #3d98d1;
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+  .american-heading span:nth-child(odd)::after {
+    bottom: -50px;
+  }
+
+  .american-heading span:nth-child(even)::after {
+    bottom: -50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 862px) {
+  .american-heading span:nth-child(odd)::after {
+    bottom: -45px;
+  }
+
+  .american-heading span:nth-child(even)::after {
+    bottom: -45px;
+  }
+}
+
+.prospect-heading span:nth-child(odd)::after {
+  position: absolute;
+  content: "";
+  bottom: -13px;
+  left: 10px;
+  width: 14px;
+  height: 7px;
+  transform: skew(-14deg);
+  background: var(--color-white);
+}
+
+.prospect-heading span:nth-child(even)::after {
+  position: absolute;
+  content: "";
+  bottom: -13px;
+  left: 7.5px;
+  width: 14px;
+  height: 7px;
+  transform: skew(-14deg);
+  background-color: #3d98d1;
+}
+
+.team {
+  max-width: 400px;
+  min-width: 400px;
+  background-color: #082035;
+}
+
+.team div {
+  transition: all 0.3s ease-in-out;
+  background-color: #082035;
+}
+
+.team-content {
+  border-bottom: 1px solid #bdbec0;
+}
+
+@media (min-width: 768px) {
+  .sellect {
+    min-width: 200px;
+  }
+
+  .vh-25 {
+    min-height: 25vh;
+  }
+
+  .ms-negative-23 {
+    margin-left: -23px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .margin-top-negative {
+    margin-top: -150px !important;
+  }
+
+  .lh-49 {
+    line-height: 49px !important;
+  }
+}
+
+@media (min-width: 1399px) {
+  .mw-xxl-21 {
+    max-width: 21%;
+  }
+
+  .mw-xxl-20 {
+    max-width: 20%;
+  }
+
+  .lh-40 {
+    line-height: 40px !important;
+  }
+
+  .draft-page-bg {
+    background-size: 100% 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .sellect {
+    min-width: 285px;
+  }
+
+  .flex-xxxl-nowrap {
+    flex-wrap: nowrap !important;
+  }
+
+  .padding-right-xxxl-20 {
+    padding-right: 48px !important;
+  }
+
+  .justify-content-center-xxxl {
+    justify-content: center !important;
+  }
+
+  .py-xxl-17 {
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  .table-text-2 span {
+    padding-left: 33px;
+  }
+
+  .table-text-3 {
+    padding-left: 17px;
+  }
+
+  .table-text-4 {
+    padding-left: 40px;
+  }
+
+  .table-text-5 {
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .ncaaf-front-hero-img {
+    padding-left: 48px;
+  }
+}
+
+@media (max-width: 1799.98px) {
+  .table-text-2 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 1599.98px) {
+  .table-text-2 {
+    width: 620px;
+  }
+
+  .fantasy-right {
+    top: 300px;
+    max-width: 350px;
+  }
+
+  .select-text {
+    left: 45.5%;
+  }
+
+  .select-text-2 {
+    left: 74.5%;
+  }
+
+  .table-text-2 span {
+    padding-left: 18px;
+  }
+
+  .table-text-3 {
+    padding-left: 8px;
+  }
+
+  .table-text-4 {
+    padding-left: 20px;
+  }
+
+  .table-text-5 {
+    padding-left: 100px;
+  }
+
+  .py-xxl-custom {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .custom-mb-minus {
+    margin-bottom: -8px;
+  }
+
+  .front-video-card {
+    min-height: 217px;
+    background-size: contain;
+  }
+
+  .video-card-img {
+    min-width: 171px;
+  }
+
+  .custom_height {
+    height: 197px;
+  }
+
+  .custom-width-500 {
+    min-width: 448.69px;
+  }
+
+  .scoreboardLeftDotsImg {
+    left: -70px;
+    top: 140px;
+  }
+
+  .players-table .table-img {
+    max-width: 50px !important;
+  }
+
+  .american-heading span:nth-child(even)::after {
+    left: 5.2px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .gamelog-select {
+    max-width: 270px;
+  }
+
+  .table-text-2 {
+    width: 570px;
+  }
+
+  .select-text {
+    left: 47.5%;
+  }
+
+  .select-text-2 {
+    left: 75.5%;
+  }
+
+  .pt-10-rem {
+    padding-top: 5rem;
+  }
+
+  .front-video-card {
+    min-height: 187px;
+  }
+
+  .video-card-img {
+    min-width: 131px;
+  }
+
+  .scoreboardDotsImg {
+    right: 50px;
+    width: 65%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .gamelog-select {
+    max-width: 240px;
+  }
+
+  .fantasy-left {
+    max-width: 300px;
+    top: 490px;
+    left: 5%;
+  }
+
+  .fantasy-right {
+    max-width: 300px;
+    top: 350px;
+    right: 4%;
+    z-index: -1;
+  }
+
+  .custom-mb-minus {
+    margin-bottom: 0px;
+  }
+
+  .nfl-team-stats .gamelog-tr th,
+  .nfl-team-stats .gamelog-tr td {
+    line-height: 55px !important;
+  }
+
+  /* ================================== */
+  .front-video-card {
+    min-height: 157px;
+  }
+
+  .video-card-img {
+    min-width: 93px;
+  }
+
+  .matchup-card {
+    transform: translateX(0px);
+  }
+
+  .hero-front-img {
+    margin-left: 24px;
+  }
+
+  .trusting-content {
+    transform: translateX(50px);
+  }
+
+  .explore-btn {
+    width: 204px;
+    background-size: 204px;
+  }
+
+  .custom_height {
+    height: 189px;
+  }
+
+  .scoreboardDotsImg {
+    top: 220px;
+  }
+
+  .scoreboardLeftDotsImg {
+    top: 120px;
+    width: 65%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .follow-texts {
+    margin-top: 0;
+  }
+
+  .table_texts {
+    padding-right: 0;
+  }
+
+  .gamelog-select {
+    max-width: 100%;
+  }
+
+  .nflLogoImg {
+    width: 150px;
+  }
+
+  .standing-table .table-img {
+    max-width: 70px;
+  }
+
+  .fantasy-left {
+    display: none;
+  }
+
+  .fantasy-right {
+    display: none;
+  }
+
+  .mb-xs-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .select-text {
+    left: 44.5%;
+  }
+
+  .select-text-2 {
+    left: 73.5%;
+  }
+
+  .hero-front-img {
+    margin-left: 0px;
+  }
+
+  .trusting-content {
+    transform: translateX(0px);
+  }
+
+  .front-video-card {
+    min-height: 240px;
+  }
+
+  .video-card-img {
+    min-width: 140px;
+  }
+
+  .matchup-card {
+    transform: translateX(40px);
+  }
+
+  .custom_height {
+    height: 182px;
+  }
+
+  .custom-width-400 {
+    max-width: 380px;
+  }
+
+  .scoreboardDotsImg {
+    top: 210px;
+    right: 0px;
+    width: 100%;
+  }
+
+  .scoreboardLeftDotsImg {
+    width: 75%;
+    left: -140px;
+  }
+
+  .min-height-68 {
+    min-height: 55px;
+  }
+
+  .frontscore-minus-mb {
+    margin-bottom: -14px;
+  }
+
+  .player-profile-table td {
+    line-height: 60px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team-hero-img {
+    max-width: 210px;
+  }
+
+  .injuries_table {
+    table-layout: unset;
+  }
+
+  .nflLogoImg {
+    width: 110px;
+  }
+
+  .bg-xs-light-grey {
+    background-color: var(--color-light-grey);
+  }
+
+  .bg-xs-light-black {
+    background-color: var(--color-light-black);
+  }
+
+  .floating-heading {
+    width: 100%;
+  }
+
+  .text-bg {
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .table-img-team {
+    max-width: 75px;
+  }
+
+  .select-text {
+    left: 48%;
+  }
+
+  .select-text-2 {
+    left: 75%;
+  }
+
+  .depth-chart-table table tbody td {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .passing-yards {
+    min-width: 195px;
+  }
+
+  .opponentgrey {
+    width: 35px;
+  }
+
+  .matchup-card {
+    transform: translateX(0px);
+  }
+
+  .explore-btn {
+    width: 184px;
+    background-size: 184px;
+  }
+
+  .front-video-card {
+    background-size: cover;
+  }
+
+  .custom_height {
+    height: 179px;
+  }
+
+  .custom-width-500 {
+    min-width: 432.7px;
+  }
+
+  .scoreboardDotsImg {
+    display: none;
+  }
+
+  .scoreboardLeftDotsImg {
+    display: none;
+  }
+
+  .players-table .table-img {
+    max-width: 40px !important;
+  }
+
+  .tab-btn-padding {
+    padding: 13px 33px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .team-hero-img {
+    max-width: 179px !important;
+  }
+
+  .select-text {
+    display: none;
+  }
+
+  .select-text-2 {
+    display: none;
+  }
+
+  .mw-xxs-350 {
+    max-width: 350px;
+  }
+
+  .w-xs-25 {
+    width: 15%;
+  }
+
+  .fantasy-table-img {
+    max-width: 35px;
+  }
+
+  .min-w-260 {
+    min-width: 170px;
+  }
+
+  .fantasy-stats .table > tbody > tr > td {
+    line-height: 34px;
+  }
+
+  .border-custom-after::after {
+    position: absolute;
+    content: "";
+    bottom: -17.9px;
+    width: 100%;
+    left: 0;
+    height: 0.5px;
+    background-color: var(--color-very-light-gray);
+  }
+
+  .injuries-img {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  .nav_tabs_stats_btn {
+    padding: 7px 40px !important;
+  }
+
+  .active-nav-btn-blue-stats {
+    padding: 8px 40px !important;
+  }
+
+  .form-select {
+    font-size: 11px !important;
+    background-size: 16px;
+  }
+
+  .heading-bar-w-100 {
+    width: 100%;
+  }
+
+  .ncaaf-front-heading-bar .gameblog-headings {
+    width: 350px;
+  }
+
+  .ncaaf-front-heading-bar .gameblog-headings .nav_tabs_stats_btn {
+    width: 350px;
+    height: 55px;
+  }
+
+  .tab-btn-padding {
+    padding: 13px 33px !important;
+  }
+
+  .american-heading span:nth-child(even)::after {
+    width: 10px;
+  }
+
+  .american-heading span:nth-child(odd)::after {
+    width: 10px;
+  }
+
+  .prospect-heading span:nth-child(even)::after {
+    width: 10px;
+  }
+
+  .prospect-heading span:nth-child(odd)::after {
+    width: 10px;
+  }
+}
+
+@media (max-width: 424.98px) {
+  .ncaaf-front-heading-bar .gameblog-headings {
+    width: 300px;
+  }
+
+  .ncaaf-front-heading-bar .gameblog-headings .nav_tabs_stats_btn {
+    width: 300px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .team {
+    width: 100%;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ncaaf-front-heading-bar .gameblog-headings {
+    width: 260px;
+  }
+
+  .ncaaf-front-heading-bar .gameblog-headings .nav_tabs_stats_btn {
+    width: 260px;
+  }
+}
+
+/* =======================================NCAAF-SCHEDULE-CSS-START============================ */
+.schedulehome {
+  margin-bottom: -85px;
+  background-image: url("./Assets/NcaafFrontAssets/ScheduleAssets/images/schedulebg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 17rem;
+}
+
+.schedule_select {
+  padding: 20px 10px;
+  width: 50%;
+  max-width: unset;
+}
+
+.table_heading {
+  background-image: url("./Assets/NcaafFrontAssets/ScheduleAssets/images/table.png");
+  min-height: 62px;
+  background-repeat: no-repeat;
+  max-width: 446px;
+  background-size: cover;
+}
+
+.mw_400 {
+  max-width: 453px;
+}
+
+.ncaaf_schdule_table {
+  background: #1a1a1a;
+}
+
+.table_bg::after {
+  content: "";
+  position: absolute;
+  width: 101.8%;
+  height: 56px;
+  left: -14px;
+  top: 0;
+  background-image: url("./Assets/NcaafFrontAssets/ScheduleAssets/images/tableheading.png");
+  background-size: 100% 100%;
+  background-position: top;
+  z-index: -1;
+}
+
+.pb-193 {
+  padding-bottom: 193px;
+}
+
+/* .min-width-300 {
+  min-width: 270px;
+  max-width: 300px;
+} */
+.width-90 {
+  width: 90px;
+}
+
+.ranking_bg {
+  background-image: url("../src/Assets/NcaafFrontAssets/ScheduleAssets/images/rankingbg.png");
+  min-height: 62vh;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.text_25 {
+  text-shadow: 2px 7px var(--color-blue);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.standing-bg-2020 {
+  font-size: 142px;
+  color: #5cc4fc;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  top: 47%;
+  z-index: -1;
+}
+
+.standing-bg-2020-shadow {
+  font-size: 142px;
+  color: transparent;
+  left: 47.9%;
+  transform: translate(-50%, -50%);
+  top: 52%;
+  z-index: -2;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #5cc4fc;
+}
+
+.ncaaf-bg-2020 {
+  font-size: 142px;
+  color: white;
+  /* left: 47%; */
+  /* transform: translate(-50%, -50%); */
+  /* top: 47%; */
+  z-index: 1;
+  position: relative;
+}
+
+.ncaaf-bg-2020-shadow {
+  font-size: 142px;
+  color: transparent;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  top: 52%;
+  z-index: 0;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #5cc4fc;
+}
+
+/* .ranking_table {
+  margin-top: 48px;
+} */
+
+.custom-input-width {
+  min-width: 322px;
+}
+
+.bg-scorepage {
+  background-color: #1c1c1c;
+}
+
+.bg-dotted-img {
+  right: 0;
+  top: -450px;
+  z-index: 0;
+}
+
+.player-profile-bg {
+  background-color: #1a1a1a;
+}
+
+.draft-page .fantasy_para {
+  width: 100% !important;
+}
+
+.draft-page .video_fantasy_card {
+  padding-right: 16px !important;
+}
+
+.standing-nfl-table-heading {
+  min-width: 321px;
+  max-width: 321px;
+  width: 321px;
+}
+
+.nfl-table-w-l-t-heading {
+  min-width: 264px;
+  max-width: 264px;
+  width: 264px;
+}
+
+.nfl-table-w-l-t-heading span {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.college-football-label-heading {
+  top: 46%;
+}
+
+.mw-430 {
+  max-width: 430px;
+}
+
+.videocard-img {
+  min-width: 120px;
+}
+
+.form-select {
+  max-width: 300px;
+  max-height: 60px;
+}
+
+.matchup-row-width {
+  min-width: 210px;
+  max-width: 210px;
+}
+
+.custom_width_230 {
+  min-width: 230px;
+  max-width: 230px;
+}
+
+.defensive_leaders_heading {
+  background-image: url("./Assets/defensive-leaders-bg.png") !important;
+}
+
+.load-more-btn-01 {
+  transition: all 0.2s ease-in-out;
+}
+
+.load-more-btn-01:hover {
+  transform: scale(0.98);
+  opacity: 0.95;
+}
+
+.tab_btn01 {
+  transform: skew(-6deg);
+}
+
+.tab_btn01 span {
+  transform: skew(6deg);
+}
+
+.active_tab_btn01 {
+  transform: scale(1.05) skew(-6deg) !important;
+  padding: 16px 65px !important;
+}
+
+.active_tab_btn01 span {
+  transform: skew(6deg);
+}
+
+.min-height-70 {
+  min-height: 70px;
+}
+
+.custom-height-fbs-btns {
+  min-height: 79px;
+}
+.custom-height-fbs-btns .nav_tabs_btn {
+  padding: 13px 26px !important;
+}
+.custom-height-fbs-btns .active-nav-btn-blue-scale {
+  padding: 17.5px 26px !important;
+}
+
+.team-content-custom-mt {
+  margin-top: -5px !important;
+}
+
+.ranking-headings-custom-mb {
+  margin-bottom: -22px;
+}
+
+.line-height-50 {
+  line-height: 50px !important;
+}
+
+.ranking-custom-w-100 {
+  min-width: 100px;
+  max-width: 100px;
+}
+.qbr-weekly-hero-heading .qbr-table-heading {
+  margin-bottom: 25px !important;
+}
+
+@media (min-width: 1200px) {
+  .tab_custom_padding {
+    padding: 17px 106px 20px 106px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .heading_cards_custom_paadding {
+    padding-left: 30px;
+  }
+
+  .videocard-img {
+    min-width: 139px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .football-streaming-br {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .fantasy-stats .table > tbody > tr > td {
+    line-height: 51.9px;
+  }
+
+  .top-heading-img {
+    max-width: 290px;
+  }
+
+  .headlines_card {
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .nfl-table-w-l-t-heading {
+    min-width: 234px;
+    max-width: 234px;
+    width: 234px;
+  }
+
+  .nfl-table-w-l-t-heading span {
+    min-width: 60px;
+    max-width: 60px;
+    width: 60px;
+  }
+
+  .videos-img {
+    height: 230px;
+  }
+
+  /* .custom-height-fbs-btns {
+    min-height: 131px;
+  } */
+}
+
+@media (max-width: 1299.98px) {
+  .standing-bg-2020 {
+    left: 46%;
+  }
+
+  .standing-bg-2020-shadow {
+    left: 47.3%;
+    /* top: 120%; */
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .standing-bg-2020-shadow {
+    font-size: 114px;
+    top: 113%;
+  }
+
+  .standing-bg-2020 {
+    top: 109%;
+    font-size: 114px;
+  }
+
+  .ranking_table {
+    margin-top: 79px;
+  }
+
+  .team-hero-img {
+    max-width: 240px;
+  }
+
+  .schedulehome {
+    background-size: cover;
+  }
+
+  .table_bg::after {
+    height: 54px;
+    width: 102.6%;
+  }
+
+  .pb-193 {
+    padding-bottom: 93px;
+  }
+
+  .mw-430 {
+    max-width: 700px;
+  }
+
+  .ncaaf-bg-2020 {
+    font-size: 114px;
+  }
+
+  .ncaaf-bg-2020-shadow {
+    font-size: 114px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bg-dotted-img {
+    top: -250px;
+  }
+
+  .mw-430 {
+    max-width: 100%;
+  }
+
+  .min-height-70 {
+    min-height: 60px;
+  }
+
+  .ncaaf-bg-2020 {
+    font-size: 94px;
+  }
+
+  .ncaaf-bg-2020-shadow {
+    font-size: 94px;
+  }
+
+  .ranking-headings-custom-mb {
+    margin-bottom: -16px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  .table_heading {
+    max-width: 361px;
+    background-size: 100% 100%;
+  }
+
+  .standing-bg-2020-shadow {
+    font-size: 90px;
+  }
+
+  .standing-bg-2020 {
+    font-size: 90px;
+  }
+
+  .ranking_table {
+    margin-top: 66px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .schedule_select {
+    width: 100%;
+    padding: 14px 10px;
+    max-width: 509px;
+  }
+
+  .table_heading {
+    max-width: 309px;
+    min-height: 48px;
+  }
+
+  .standing-bg-2020 {
+    top: 100%;
+    left: 47%;
+  }
+
+  .standing-bg-2020-shadow {
+    top: 105%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .fantasy-stats .table > tbody > tr > td {
+    line-height: 51.5px;
+  }
+
+  .custom-height-fbs-btns {
+    min-height: 105px;
+  }
+  .qbr-weekly-hero-heading .qbr-table-heading {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .fantasy-stats .table > tbody > tr > td {
+    line-height: 34.4px;
+  }
+
+  .custom-input-width {
+    min-width: 222px;
+  }
+
+  .navbar_btn__2tim5 {
+    font-size: 2.1rem !important;
+    width: 3.8rem !important;
+    height: 3.8rem !important;
+  }
+
+  .menu-toggle {
+    width: 3.8rem !important;
+    height: 3.8rem !important;
+  }
+
+  .menu-toggle div {
+    width: 50% !important;
+    height: 4px !important;
+  }
+
+  .navbar_buttons__2NHRi {
+    gap: 1rem;
+  }
+
+  .logo-parent {
+    width: 90px !important;
+  }
+
+  .header-style {
+    height: 101px !important;
+  }
+
+  .live_btn {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .min-height-70 {
+    min-height: 40px;
+  }
+
+  .active_tab_btn01 {
+    padding: 9px 34px !important;
+  }
+
+  .schedule_select {
+    padding: 12px 10px;
+  }
+
+  .ncaaf-bg-2020 {
+    font-size: 64px;
+  }
+
+  .ncaaf-bg-2020-shadow {
+    font-size: 64px;
+  }
+
+  .ranking-headings-custom-mb {
+    margin-bottom: -8px;
+  }
+
+  .line-height-50 {
+    line-height: normal !important;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .standing-bg-2020 {
+    font-size: 78px;
+  }
+
+  .standing-bg-2020-shadow {
+    font-size: 78px;
+  }
+}
+
+@media (max-width: 425.98px) {
+  .table_heading {
+    background-size: 100% 100%;
+  }
+
+  .mobile_image {
+    max-width: 30px;
+  }
+
+  .pb-193 {
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .schedule_select {
+    width: 90%;
+  }
+
+  .standing-bg-2020 {
+    left: 46.4%;
+    font-size: 66px;
+  }
+
+  .standing-bg-2020-shadow {
+    font-size: 66px;
+  }
+}
+
+/* ===================NCAAF-TEAM-DETAILS-STATS-CSS-START================= */
+.ncaaf-scoreboard-page-bg {
+  background-image: url("./Assets/ncaaf-team-detail-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -25px;
+}
+
+.custom_margin_left_minus {
+  margin-left: -20px;
+}
+
+.custom_margin_left_minus_2 {
+  margin-left: -1px;
+}
+
+.table_btn_custom_padding {
+  padding: 13px 100px 14px 21px !important;
+}
+
+.mt_minus {
+  margin-top: -30px;
+}
+
+.custom_height_60 {
+  height: 60px;
+}
+
+.team_players_btn_custom_padding {
+  padding: 24px 80px !important;
+}
+
+.team_btn_custom_padding {
+  padding: 20px 100px !important;
+}
+
+.gray_strip_btn_bg {
+  top: 7px;
+  right: 87%;
+}
+
+.gray_strip_btn_bg_2 {
+  top: 6px;
+  right: 89%;
+}
+
+.custom_min_width {
+  min-width: 80px;
+  margin-left: -12px;
+}
+
+.team_bg_strip {
+  z-index: -1;
+  top: 19%;
+}
+
+.team_leaders_overflow::-webkit-scrollbar {
+  height: 4px !important;
+  width: 4px !important;
+  background: transparent !important;
+}
+
+.team_leaders_overflow::-webkit-scrollbar-thumb:horizontal {
+  background: #2e9cd5 !important;
+  border-radius: 10px !important;
+}
+
+.team_follow_btn_padding {
+  padding: 5px 15px;
+  height: 28px;
+}
+
+.team_stat_table_min_width {
+  min-width: 235px;
+}
+
+.table_team_stat_heading td {
+  min-width: 80px;
+}
+
+.team_select_custom_min_width {
+  min-width: 300px;
+}
+
+.ncaaf-depth-chart-table table thead th,
+.ncaaf-depth-chart-table table tbody td {
+  border-right: 0px !important;
+}
+
+.ncaaf-depth-chart-table table tbody tr {
+  border-bottom: 0px !important;
+}
+
+@media (min-width: 1600px) and (max-width: 1799.98px) {
+  .gray_strip_btn_bg {
+    right: 89%;
+  }
+
+  .gray_strip_btn_bg_2 {
+    right: 88%;
+  }
+
+  .schedule_gray_strip_btn_bg {
+    right: 88.5% !important;
+  }
+}
+
+@media (min-width: 1599.98px) {
+  .gray_strip_btn_bg {
+    right: 90%;
+  }
+}
+
+@media (max-width: 1599.98px) {
+  .team_member_img {
+    width: 120px;
+  }
+
+  .team_bg_strip {
+    top: 16%;
+  }
+
+  .gray_strip_btn_bg_2 {
+    right: 86%;
+  }
+
+  .schedule_gray_strip_btn_bg {
+    right: 87% !important;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .team_member_img {
+    width: 100px;
+  }
+
+  .team_bg_strip {
+    top: 13%;
+  }
+
+  .team_select_custom_min_width {
+    min-width: 250px;
+  }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1400px) {
+  .gray_strip_btn_bg {
+    right: 85%;
+  }
+
+  .gray_strip_btn_bg_2 {
+    right: 84%;
+  }
+
+  .schedule_gray_strip_btn_bg {
+    right: 85% !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .team_players_btn_custom_padding {
+    padding: 16px 45px !important;
+  }
+
+  .team_btn_custom_padding {
+    padding: 16px 50px !important;
+  }
+
+  .custom_margin_left_minus {
+    margin-left: unset;
+    transform: unset;
+  }
+
+  .custom_margin_left_minus span {
+    transform: unset;
+  }
+
+  .custom_margin_left_minus_2 {
+    margin-left: unset;
+    transform: unset;
+  }
+
+  .custom_margin_left_minus_2 span {
+    transform: unset;
+  }
+
+  .schedule_custom_margin_left_minus {
+    margin-left: unset !important;
+    transform: unset;
+  }
+
+  .schedule_custom_margin_left_minus span {
+    transform: unset !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mt_minus {
+    margin-top: unset;
+  }
+
+  .table_details_stats_heading {
+    transform: unset !important;
+  }
+
+  .table_details_stats_heading span {
+    transform: unset !important;
+  }
+
+  .team_leaders_overflow {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .table_btn_custom_padding {
+    padding: 13px 20px !important;
+  }
+
+  .form-select {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .team_select_custom_min_width {
+    min-width: 155px;
+  }
+
+  .custom_height_60 {
+    height: 40px;
+  }
+
+  .schedule_table_regular_custom_padding {
+    padding: 12px 15px !important;
+  }
+
+  .schedule_table_preseason_custom_padding {
+    padding: 12px 15px !important;
+  }
+
+  .team_follow_btn_padding {
+    padding: 5px 10px;
+    height: 23px;
+  }
+
+  .team_players_btn_custom_padding {
+    padding: 10px 43px !important;
+  }
+
+  .team_btn_custom_padding {
+    padding: 10px 50px !important;
+  }
+}
+
+/* ===================NCAAF-TEAM-DETAILS-SCHEDULE-CSS-START==================== */
+.team_schedule_calendar_btn {
+  padding: 0px 17px;
+  background-color: #3d98d1;
+  border-radius: 5px;
+  border: 2px solid #3d98d1;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.team_schedule_calendar_btn:hover {
+  background-color: #fff;
+  color: #3d98d1 !important;
+}
+
+.schedule_table_regular_custom_padding {
+  padding: 13px 19px 14px 21px;
+}
+
+.schedule_table_preseason_custom_padding {
+  padding: 13px 70px 14px 21px;
+}
+
+.schedule_gray_strip_btn_bg {
+  top: 21%;
+  right: 89.5%;
+}
+
+.schedule_custom_margin_left_minus {
+  margin-left: -15px;
+}
+
+/* ===================NCAAF-TEAM-DETAILS-ROSTER-CSS-START================= */
+.roster_table_btn_padding {
+  padding: 13px 40px 14px 21px;
+}
+
+.roster_table_btn_padding_2 {
+  padding: 13px 90px 14px 21px;
+}
+
+.roster_gray_strip_btn_bg {
+  top: 20%;
+  right: 90%;
+}
+
+.roster_gray_strip_btn_bg_2 {
+  top: 42%;
+  right: 89%;
+}
+
+.custom_min_width_100 {
+  min-width: 100px;
+}
+
+.custom_min_width_300 {
+  min-width: 300px;
+}
+
+@media (min-width: 1600px) and (max-width: 1799.98px) {
+  .roster_gray_strip_btn_bg_2 {
+    right: 88%;
+  }
+
+  .roster_gray_strip_btn_bg {
+    right: 89%;
+  }
+}
+
+@media (max-width: 1599.98px) {
+  .roster_gray_strip_btn_bg_2 {
+    right: 86%;
+  }
+
+  .roster_gray_strip_btn_bg {
+    right: 87%;
+  }
+  .nfl-fantasy-right {
+    max-width: 300px;
+    top: 310px;
+    right: 8%;
+  }
+  .nfl-fantasy-left {
+    max-width: 340px;
+    top: 420px;
+    left: 3%;
+  }
+}
+@media (max-width: 1399.98px) {
+  .nfl-fantasy-left {
+    max-width: 310px;
+    top: 500px;
+    left: 7%;
+  }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1400px) {
+  .roster_gray_strip_btn_bg_2 {
+    right: 84%;
+  }
+
+  .roster_gray_strip_btn_bg {
+    right: 85%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .roster_table_btn_padding_2 {
+    padding: 13px 45px 14px 21px;
+  }
+
+  .roster_table_btn_padding {
+    padding: 13px 30px 14px 21px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .roster_table_btn_padding_2 {
+    padding: 13px 40px 14px 21px !important;
+  }
+
+  .roster_table_btn_padding {
+    padding: 13px 30px 14px 21px !important;
+  }
+}
+
+/* ===================NCAAF-TEAM-DETAILS-CSS-START================= */
+.team_detail_btn_statistics {
+  padding: 7px 32px;
+  border-radius: 16px;
+}
+
+.table {
+  width: 100%; /* Ensure the table fills its container */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+.table td {
+  padding: 8px; /* Decrease padding to reduce space */
+  font-size: 12px; /* Decrease font size */
+  white-space: nowrap; /* Prevent content from wrapping */
+}

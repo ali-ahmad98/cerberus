@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 30 30">
+      <image width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABQ0lEQVR42mP4//8/AzI+mFrMsNklFBfmBuK7BLA8TP23l68Z0M2HYYZBY/GOgASGldp2uDAvEP8ngFVg6r8+e0E1i1mBOB2IZ2OxcAFUjo8WFsNwBBaLE9DVkWrxOqCm2zjwGSIsPghTv8kx6DYwruEYmH7W4LP4NJ74e0eExQ9x6QeafQKfxS5ARZFYNE4G4gAiLPYB4ilY5BOBZjsTimMWLBpjSIjjOCzygiCzRy0etXjU4lGLR4bFDUBsAcU1WOSbkeQbqWkxpZgoi5mB+BcVLf0JapngtfjZweMMD7fsZjhW0hAMVPybCpb+ApoVCDITZDZOi2H4+uwlIJ8nU2j5XyBOAplFsOmDZjEIhwHxcjR8FIslJ9DV7U8qiDuUWc7waOd+siymT2NvMFvMAcSxWCxOgcox0sJibiISlNKgthgAHZEz2Yny4EgAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="i_37_" data-name="i (37)" width="60" height="60" fill="url(#pattern)"/>
+</svg>

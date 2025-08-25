@@ -1,0 +1,23 @@
+.coming-soon {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+  height: 100%;
+  background-color: #317cb4;
+  background-image: linear-gradient(to right, rgba(49, 124, 180, 0.6), rgba(37, 86, 143, 0.6)),
+    url("./assets/lion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.text {
+  font-size: 2.4rem;
+  font-weight: bold;
+}

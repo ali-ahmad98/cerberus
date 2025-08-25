@@ -1,0 +1,376 @@
+/* :root {
+  --fs-xxl: 26px;
+  --fs-xl: 25px;
+  --fs-lg: 23px;
+  --fs-sm: 20px;
+} */
+
+.header-style {
+  height: 120px !important;
+  background-image: url(../../Assets/headerbg.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  z-index: 999;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+a:hover {
+  color: white;
+}
+
+.linkStyle {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  text-shadow: 0px 0px 10px #105884;
+  text-decoration: none !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+}
+
+.dropdown-style {
+  position: absolute !important;
+  top: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  left: 0;
+  width: auto !important;
+  z-index: 1000;
+  color: white !important;
+  height: auto !important;
+  background: linear-gradient(#3d98d1 0%, #1a2e68 100%);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  padding: 20px;
+  border-radius: 0px 0px 12px 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.linkStyle:hover {
+  color: #fff;
+}
+
+.dropdown-link-style {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  text-align: left !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  padding: 6px 30px;
+}
+
+.bottom-list * {
+  white-space: nowrap !important;
+}
+
+.dropdown-bottom-link {
+  color: white !important;
+  padding: 3px 0;
+  font-size: 12px;
+}
+
+.bg-anim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 0;
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(#2b85bb 0%, #3683bd 100%);
+}
+
+.linkStyle:hover .bg-anim {
+  height: 100%;
+}
+
+.dropdown-style {
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: top left !important;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.active-dropdown {
+  pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1);
+}
+
+.custom-width {
+  max-width: 835px !important;
+  width: auto !important;
+  background-size: cover !important;
+}
+
+.upperTeeth {
+  opacity: 0;
+}
+
+.bottomTeeth {
+  opacity: 0;
+}
+
+.comming {
+  font-size: 45px;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: bold;
+}
+
+.soon {
+  text-align: center;
+  font-size: 55px;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-align: center;
+  color: #0097f59c;
+}
+
+.right-align.dropdown-style {
+  right: 0px !important;
+  left: unset !important;
+}
+
+/* ANIMATED MENU CSS  */
+
+.one,
+.two,
+.three {
+  width: 60%;
+  height: 5px;
+  background: rgb(0, 0, 0);
+  margin: 2px auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 8px;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font-size: 2.4rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.header-style .menu-toggle {
+  width: 4.8rem !important;
+  height: 4.8rem !important;
+}
+
+.menu-toggle.on .one {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.on .three {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.menu-toggle.on .two {
+  opacity: 0;
+}
+
+.mobile-menu-active {
+  position: relative;
+}
+
+.mobile-menu-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  z-index: 10000;
+  height: calc(100vh - 100px) !important;
+  overflow: auto;
+  background: #1a1a1a;
+  filter: drop-shadow(0px 26px 59px rgba(0, 0, 0, 0.16));
+}
+
+.mobile-menu-wrapper::-webkit-scrollbar {
+  width: 1em;
+}
+
+.mobile-menu-wrapper::-webkit-scrollbar-thumb {
+  background-color: #3d98d1;
+  outline: 1px solid slategrey;
+}
+
+.mobile-view-menu span {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  text-shadow: 0px 0px 0px #105884;
+}
+
+button.mobile-view-menu:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+button.mobile-view-menu {
+  outline: none !important;
+  border-bottom: 1px solid #707070 !important;
+  color: #191919;
+}
+
+button.mobile-view-menu.active-accordion {
+  outline: none !important;
+  border-bottom: 1px solid #707070 !important;
+}
+
+button.mobile-view-menu .icon {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: 0.2s ease-in-out;
+  width: 35px;
+  height: 35px;
+}
+
+.active-accordion .icon {
+  transform: rotate(180deg) !important;
+  transform-origin: center !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.mobileDropdown {
+  background: linear-gradient(#3d98d1 0%, #1a2e68 100%);
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  padding: 10px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.nested-dropdown-link {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 4px 0;
+  text-align: left;
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.mobile-menu-active button:hover {
+  text-decoration: none !important;
+}
+
+.active-nav-link span,
+.active-nav-link svg {
+  z-index: 1;
+}
+
+.header-style li {
+  list-style: none;
+}
+
+.logo-parent {
+  width: 100px;
+}
+
+.afc-sub-url {
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 5px;
+  padding-left: 50px !important;
+  text-decoration: none !important;
+}
+
+.fantasy-bg {
+  background: url(../../Assets/headerIcon/fantasy.png), linear-gradient(#3d98d1 0%, #1a2e68 100%);
+  background-size: 70% 50%, cover !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.team-stats {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+  color: #f8f8f8;
+  padding-left: 10px;
+}
+
+.slideDown {
+  pointer-events: none;
+}
+
+.slideUpDown {
+  pointer-events: all;
+}
+
+.bottom-teeth-bg {
+  position: absolute;
+  bottom: 10%;
+  width: 45%;
+  left: 50%;
+  z-index: -3;
+  opacity: 0.2;
+  transform: translateX(-50%);
+}
+
+.upper-teeth-bg {
+  position: absolute;
+  top: 10%;
+  width: 45%;
+  left: 50%;
+  z-index: -3;
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+
+.teamWidthRemove {
+  max-width: 835px !important;
+  width: 100%;
+  height: 300px;
+}
+
+.mobile-teeth {
+  z-index: 0;
+}
+
+.mobileDropdown {
+  min-height: 300px;
+}
+
+.header-style a {
+  text-decoration: none;
+  color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

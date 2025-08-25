@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom";
+import ArrowIcon from "../../../src/components/Navbar/assets/arrowicon.png";
+import AudioPodcast from "../homepage/AudioPodcast";
+
+const ProdcastListItem = () => {
+  return (
+    <div>
+      <AudioPodcast viewOn="nfl" />
+      <p className="text-end pb-4 z-index-20 position-relative white font-web font-semibold para respLeft">
+        <Link to={`/viewAllNflPodcast`} className="cursor-pointer viewAllLink">
+          VIEW ALL NFL PODCASTS
+          <span className="ms-3">
+            <img src={ArrowIcon} alt="ArrowIcon" />
+          </span>
+        </Link>
+      </p>
+    </div>
+  );
+};
+
+export default ProdcastListItem;

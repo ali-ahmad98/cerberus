@@ -1,0 +1,93 @@
+.footer {
+  background-image: url("../../Assets/footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+.overlay {
+  background: rgb(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.leftBox {
+  border-radius: 1px solid black;
+  background-color: #232323;
+  color: #bdbec0;
+  width: min-content;
+}
+
+.leftBoxDiv {
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+}
+
+.contact {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+}
+
+.contact span {
+  text-decoration: underline;
+  color: #3d98d1;
+  font-size: 17px;
+}
+
+.list {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.list a {
+  color: #bdbec0;
+  text-decoration: none;
+}
+
+.list li {
+  padding-bottom: 10px !important;
+}
+
+.list h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.copyrightText {
+  color: white;
+  margin-left: -400px !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    background-size: cover;
+  }
+
+  .overlay {
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .footer {
+    background-size: 1180px;
+  }
+
+  .overlay {
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+}

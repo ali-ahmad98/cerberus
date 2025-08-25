@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  padding: 0 2.4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  column-gap: 1.2rem;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 11rem;
+  padding: 1.2rem 1.6rem;
+  cursor: pointer;
+}
+
+.item::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #3686bf;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: all 0.6s;
+  transform-origin: top;
+}
+
+.item:hover::before {
+  transform: scaleY(1);
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none !important;
+  color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font-size: 2.4rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+}

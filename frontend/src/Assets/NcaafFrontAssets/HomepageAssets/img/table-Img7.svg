@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="60" height="60" fill="none"/>
+    </clipPath>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 70 70">
+      <image width="70" height="70" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAFVUlEQVR42u2aX2wURRzHr72tHrIrFbEhSlXsQ0sLQvyDwWhEovgggYAvRqPBFyVEKiY+1NiSFImJKAlRqcaIUkPE+DcxvPggtFxSEbXQKhFjgi3F+B8sINX2ds/P725O9tb7s0d717tzHr6Znd2Z2f19ZvY3v5ndQDQaDWj9VxqCBqPBaDAajAajwWgwGowGo8FoMFoajAajwWgwGkwRghkbC0QHBotdQXRR2uuH+gLRrn0Z5XSFr0h7fWQkBRgadoJmUcsOmnMihvkt6SbyNa5rIVTto42bqP8D6YxU12NwSwjMJYBo+BeOYa0mf8I2zO9Rm8BC8zF4iPwWjuvRtaguBdh20ii6vRzAXIbRBzH6LQy7BzCN6DbOfSFGcu4vroXJn1D5UxHDOhIHZa3hnOkC84Yq05wLmCAV7qBAsAhfoQYM3auMcgBxEp1WvZ9RkaB5hLIb0FLa+Fi10ZkLmGoqyA270HIKTknzoAKu8jwMFPCz0SJ0M/eoV74hU50KytXS8ytJt/oB4Ufc/yePj8oIppIKn6qKoqPobR5qI6SfIt2G9qjz3zFc36WslcWwC+ygRU9ZL1H3K+qNuh7ORkNoH0bvIn2R9Fm0meMO0g9JD6GzEwUkCY5h7fB2flofoxybkwP5lWmATMGwtQDpdXJor9DC3g6/ztdgdDwvvekPjPW+xyeFAPIAbfQWKwyPZNTO9zsrVWLcfeiwj4ZxhNarESlPbIEO2qUBxD3qN+U6XU/F6GWMisdJW8ivx8OvpaE25byi5SBs+WDC4hiZWRglPXbxG33Mjjl+88sMZT6f8ACPG8r0u4z0YRzt60UCY5RO2y1TvMyKqiMXSCCYpvzfqDGfke+l3OD4JAL5hQ56gVf/Rol/vM9Hx7VT5kyauq15XRLwYM9NyswSXy7M8uECrqbsYxKLecD0k16Yz7XSXG7yZwGhyKzYmmskzjNeY3tCCpmJ87qI5KYvFy5AM98837UdzznPcb1aslB1BgZD+Vxd13LTQR9Rp21XWSfH4VPOJpzmODqx/xwY6zBgLs7rtgM9uSLb0kJmD8otRE+ozadcwfSM/zmtDbQzxjMcIH9lQfZjlJMbyWJc47lo21qAmqm3A3Vz3I9OZQJLOifpvqvuDUQ7d+Ykp3NnLZoWy58+U5iNKgy8G+OOZTBudZahvj0L2OVJi8D2Z/KwGZ6nHTzANKDP0hj2SaqYw6UOT3nHk3+wZMEo1WBEKjgSjc6WVT3wdpF2UW6vHd+TrVDgEhDEQcZ8guvcmlIHI6/FLanCcoA8qkbWOgnP1TS8h/z6JAiG9U7MFwXN3S4wm0sejILzXgowvwLiSdK70AqO+1K8cvLJ43LVxuLETqCMrnIB81CWgK0PONeTfuP1LayBemzZRDPM18hH1Pnf3d+TShYMmh4xYn4kPZwqa9QF6muAtABrK8cfcTzodsDKqU8tBzDxDXLDvM4xzEUYtoTjjd4N7/gnktg2xkxP3RDnb0XblbOeSToXpzyvHMB4p/MlgBj2gGHFbC319UnGMJsZha3lAqYm9inGsMIY9pt6LYbtZDgDnFvsI4iUEXRnWYDB6Jbk+MTcj4Hywb7T44z/4DVZx3GVn3ZLHYwEbvLZ9ChGt6ktyMSHu+nyEc7zWgmgpycPzNDxgFPXWAhV2HVNjzh1TTWprzc1cn2LHar+2TX7tMeMv6o+Y9vRba+U/x9VGCp7yGE1aoaBc39iW+B//auZjACA3MBr9KNaJ/VqMKL9B+K/hnWHZ9nd4YWkMxK/gumfE/VfmxqMBqPBaDAajAajIWgwGowGo8FoMBqMBqPBlJf+ASd2QeESZyPqAAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <g id="Repeat_Grid_12" data-name="Repeat Grid 12" clip-path="url(#clip-path)">
+    <g transform="translate(-166 -1465)">
+      <rect id="i_46_" data-name="i (46)" width="60" height="60" transform="translate(166 1465)" fill="url(#pattern)"/>
+    </g>
+  </g>
+</svg>

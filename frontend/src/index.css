@@ -1,0 +1,1308 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ff-segoe-ui {
+  font-family: "Segoe UI", sans-serif !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/* ARTICLES-CSS-START */
+.Articles {
+  margin-top: -118px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-image: url("../src/Assets/Articlesbg.png");
+}
+.articles_heading {
+  padding-top: 19rem;
+}
+.Articles_match_text {
+  bottom: 38px;
+  left: 26px;
+}
+.Articles_match_text h6 {
+  line-height: 23px;
+}
+.Articles_card::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--color-dark-blue);
+  opacity: 0.5;
+  width: 0%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.Articles_card:hover::after {
+  width: 100%;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.like_icons {
+  padding-right: 24px;
+}
+.articals_ncaf {
+  margin-top: -1px;
+  background: #1a1a1a;
+}
+.my-highlight {
+  background-position: -200px -30px;
+  background-size: cover;
+  background-image: url("../src/Assets/dotted.png");
+}
+.deny {
+  min-height: 234px;
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-image: url("../src/Assets/devy.png");
+  border-radius: 32px;
+}
+.devy-bg-2 {
+  background-image: url("../src/Assets/devy-bg-2.png");
+}
+.devy-bg-3 {
+  background-image: url("../src/Assets/devy-bg-3.png");
+}
+.devy-bg-4 {
+  background-image: url("../src/Assets/devy-bg-4.png");
+}
+.deny::after {
+  border-radius: 32px;
+}
+.denyimg {
+  background-image: url("../src/Assets/devy.png");
+  background-size: cover;
+  min-height: 150px;
+  border-radius: 32px;
+  position: relative;
+}
+.newstext::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--color-black);
+  opacity: 0.5;
+  width: 0%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.newstext:hover::after {
+  width: 100%;
+}
+.denyimg::after {
+  border-radius: 32px;
+}
+/* ARTICLES-CSS-ENDS */
+/* PROFILE PLAYER STYLE  */
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.profile-player-bg-image {
+  background-image: url("./Assets/player-profile-bg-image.png");
+  background-size: cover;
+  min-height: calc(100vh - 120px);
+  position: relative;
+}
+
+.profile-player-bg-image::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-player-blue-about-box {
+  height: 117px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d98d1cb;
+  transform: skew(-10deg);
+}
+
+.profile-player-blue-about-box h4 {
+  transform: skew(10deg);
+}
+
+.profile-player-blue-about-box h6 {
+  transform: skew(10deg);
+}
+
+.fade-black-bg-about-player {
+  height: 117px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #232323ca;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.16);
+  transform: skew(-10deg);
+}
+
+.fade-black-bg-about-player h6 {
+  transform: skew(10deg);
+}
+
+.fade-black-bg-about-player h4 {
+  transform: skew(10deg);
+}
+.letter-spacing-5 {
+  letter-spacing: 5px;
+}
+
+.bg_header_section {
+  background-image: url("../src/Assets/header-section-ncaaf.png");
+  min-height: 70vh;
+  font-size: var(--font-35);
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.common_btn {
+  color: var(--color-white) !important;
+  font-weight: 700;
+  border: 3px solid var(--color-blue) !important;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  font-family: "Poppins";
+  font-size: var(--font-18) !important;
+  display: inline-block;
+  transform: skew(-15deg);
+  /* Un-skew the text */
+}
+
+.common_btn:visited {
+  color: var(--color-white);
+}
+
+.common_btn:hover {
+  background: var(--color-blue);
+}
+
+.common_btn > span {
+  display: inline-block;
+  transform: skew(15deg);
+}
+
+.nfl_flag_img_adjust {
+  position: absolute;
+  top: 0;
+}
+
+.nfl_flag_img_adjust img {
+  height: 265px;
+  width: 224px;
+}
+.small_screen_size {
+  width: 100%;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.nav_tabs_btn {
+  background: linear-gradient(#2e9cd5 0%, #0b3c75 100%);
+  padding: 13px 65px !important;
+  color: var(--color-white) !important;
+  font-size: var(--font-23) !important;
+  font-weight: 600 !important;
+  /* transform: skew(-21deg); */
+  transition: 0.3s ease !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+.nav_tabs_btn span {
+  /* transform: skew(21deg); */
+  display: inline-block;
+}
+.active-nav-btn-blue-scale {
+  /* transform: scale(1.05) skew(-21deg) !important; */
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .small_screen_size {
+    width: 75% !important;
+  }
+
+  .nav_tabs_btn {
+    padding: 7px 40px !important;
+  }
+
+  .pt-10-rem {
+    padding-top: 5rem !important;
+  }
+  .scoreboard-table .table-img {
+    max-width: 80px !important;
+  }
+}
+.text-black {
+  color: var(--color-black) !important;
+}
+.bg_white {
+  background: white !important;
+}
+.mt_ive_10 {
+  margin-top: -6px;
+}
+.z-10 {
+  z-index: 10 !important;
+}
+.z-1 {
+  z-index: 1 !important;
+}
+.border-1-black {
+  border-left: 1px solid var(--grey);
+}
+.plyernews-sec {
+  background-image: url("./Assets/bg-playernews.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.custom_border {
+  border-right: 1px solid var(--color-white);
+}
+.campus-canton-sec {
+  top: -110px;
+  right: 0;
+  z-index: 0;
+}
+.Articles_WR {
+  background-size: auto;
+}
+.bg_color_black_1a1a1a {
+  background-color: #1a1a1a;
+}
+.articles_heading_WR {
+  margin-top: 32rem;
+}
+.comment-input {
+  resize: none;
+}
+.custom_input {
+  border-radius: 7px;
+  border: 2px solid var(--color-dark-gray);
+}
+.name-input::placeholder {
+  color: black;
+}
+.custom-min-width {
+  min-width: 322px;
+}
+.custom_input:focus-visible {
+  outline: unset;
+}
+/* Checkbox */
+.custom_checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  visibility: hidden;
+}
+.geekmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid var(--color-dark-gray);
+}
+.custom_checkbox input:checked ~ .geekmark {
+  background-color: var(--color-blue);
+}
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom_checkbox input:checked ~ .geekmark:after {
+  display: block;
+}
+.custom_checkbox .geekmark:after {
+  left: 7px;
+  bottom: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Checkbox */
+.comment-btn {
+  padding: 12px 17px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+.comment-btn:hover {
+  transform: scale(0.987);
+}
+/* .articles_wr .first-box,
+.articles_wr .third-box {
+  background-color: #0d6efd;
+} */
+.ncaaf_news-week_5 .week-5-img {
+  margin: 31px 0px !important;
+}
+/* .video-sec {
+  background-image: url("./Assets/dotted.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -266px;
+} */
+.ncaa_png {
+  max-width: 264px;
+}
+@media (max-width: 1200px) {
+  .small_screen_size {
+    width: 50% !important;
+  }
+  .profile-player-blue-about-box {
+    height: 80px;
+  }
+  .fade-black-bg-about-player {
+    height: 80px;
+  }
+  .playicon-img {
+    max-width: 50px;
+    width: 100%;
+  }
+  .playicon-im {
+    position: absolute;
+    z-index: 2;
+    /* right: -35px; */
+    right: -22px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+}
+@media (max-width: 991.98px) {
+  .Articles {
+    background-size: cover;
+    background-position-x: right;
+  }
+  .articles_heading_WR {
+    margin-top: 19rem;
+  }
+  .video-sec {
+    background-position-y: unset;
+  }
+  .Articles {
+    background-size: contain;
+    margin-top: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .video-sec {
+    background-image: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .articles_heading_WR {
+    margin-top: 15rem;
+    max-width: 90%;
+  }
+  .custom-min-width {
+    min-width: 222px;
+  }
+  .ncaaf_news-week_5 .week-5-img {
+    margin: 16px 0px !important;
+  }
+  .new-rorate {
+    transform: skew(18deg);
+  }
+}
+@media (min-width: 1200px) {
+  .mb-negative {
+    margin-bottom: -100px;
+  }
+  .blocks_adjustment {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+  }
+}
+@media (min-width: 1400px) {
+  .Articles_WR .fantasy-week {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .Articles .min-w-130 {
+    min-width: 140px;
+  }
+  .custom_height {
+    height: 480px;
+  }
+}
+@media (min-width: 1600px) {
+  .custom_distance {
+    margin: 11px 0px;
+  }
+  .custom_height {
+    height: unset;
+  }
+  .blocks_adjustment {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+  }
+}
+@media (min-width: 1800px) {
+  .custom_col_width {
+    width: 33.3333333% !important;
+  }
+  .articles_wr .video-sec .video-card {
+    margin-top: 16px !important;
+    margin-bottom: 4px !important;
+  }
+  .articles_wr .video-sec .video-card-imgs img {
+    max-height: 110px;
+  }
+}
+/* RANKING-CSS-START==================== */
+/* ============================================ NCAAF-FRONT ====================================== */
+.ncaaf-front-bg-1a1a1a {
+  background: #1a1a1a;
+}
+.ncaaf-standings-page {
+  background-image: url("./Assets/NcaafFrontAssets/HomepageAssets/img/standingsHeroBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 27rem;
+  margin-bottom: -275px;
+}
+.standing-bg-2020 {
+  font-size: 211px;
+  color: #5cc4fc;
+  left: 34%;
+  top: -47%;
+  z-index: -1;
+}
+.standing-bg-2020-shadow {
+  font-size: 211px;
+  color: transparent;
+  left: 34.5%;
+  top: -41%;
+  z-index: -2;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #5cc4fc;
+}
+.standingIA-custom-content {
+  width: 321px !important;
+  min-width: 321px !important;
+  max-width: 321px !important;
+}
+.standingIA-custom-width {
+  width: 537px !important;
+  min-width: 537px !important;
+  max-width: 537px !important;
+}
+.custom_width_253 {
+  width: 253px !important;
+  min-width: 253px !important;
+  max-width: 253px !important;
+}
+.custom_border_left {
+  border-left: 1px solid var(--color-grey);
+}
+.lh-60 {
+  line-height: 60px !important;
+}
+.standingIA-custom-heading {
+  width: 300px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+}
+.IAstanding-table .table_heading {
+  min-width: 546px;
+  max-width: 546px;
+  transform: translate(-27px, 4px);
+  min-height: 72px;
+  max-height: 72px;
+}
+.standingIA-table {
+  width: 99%;
+}
+.custom-th-min-width {
+  width: 390px;
+  min-width: 390px;
+  max-width: 390px;
+}
+.power-index span {
+  width: 52px !important;
+}
+.custom-width-99 {
+  width: 99%;
+}
+.glossary-title {
+  height: 20px;
+}
+.glossay-data-table {
+  min-width: 547px;
+  max-width: 547px;
+}
+.standingsIAbtn {
+  padding: 13px 26.4px;
+  transform: skew(-10deg) !important;
+  min-width: 238px !important;
+  z-index: 50;
+}
+.standingsIAbtn:focus-visible {
+  outline: unset !important;
+}
+.standingsIAbtn span {
+  transform: skew(10deg) !important;
+}
+.z-10 {
+  z-index: 10;
+}
+/* ======================= standingAA-custom-content ========================  */
+.standingAA-custom-heading {
+  width: 509px !important;
+  min-width: 509px !important;
+  max-width: 509px !important;
+}
+.standingAA-custom-width {
+  width: 600px !important;
+  min-width: 600px !important;
+  max-width: 600px !important;
+}
+.standingAA-custom-content {
+  width: 484px !important;
+  min-width: 484px !important;
+  max-width: 484px !important;
+}
+.standingAA-custom-content .standingAA-custom-content-child {
+  width: 75% !important;
+}
+.custom-text-shadow {
+  text-shadow: 0 3px 6px var(--color-black);
+}
+
+.IAstanding-table .table_heading {
+  transform: translate(-27px, 64px) !important;
+  z-index: 20;
+}
+.standingIA-table table {
+  margin-top: 60px;
+}
+.IA-table-text2 {
+  position: absolute;
+  padding: 12.7px 10px;
+  background: linear-gradient(97deg, #2e9cd5 0%, #2a92c9 100%) 0% 0% !important;
+  width: 100% !important;
+  top: -48px !important;
+  left: 14px !important;
+  transform: tr;
+}
+.IA-table-text22 {
+  background: linear-gradient(97deg, #2e9cd5 0%, #2e9cd5 100%) 0% 0% !important;
+  left: 12px !important;
+}
+.IA-table-text3 {
+  background: linear-gradient(103deg, #2b94cb 0%, #0b3c75d0 100%) 0% 0% !important;
+  width: 100% !important;
+  top: -48px !important;
+  left: 2px !important;
+  border-left: none !important;
+}
+.IA-table-text4 {
+  background: linear-gradient(296deg, #0f3968 0%, #0f3968 100%) 0% 0% !important;
+  width: 100% !important;
+  top: -48px !important;
+  left: 0px !important;
+  border-left: none !important;
+}
+/* ======================= NcaafFrontFootballStats ========================  */
+.ncaaf-front-player-left {
+  width: 518px;
+  max-width: 518px !important;
+  top: 320px !important;
+}
+.ncaaf-front-player-right {
+  max-width: 299px !important;
+  right: 18% !important;
+  z-index: 0 !important;
+}
+.ncaaf-front-football-stats .ncaaf-standings-page {
+  background-position-x: center !important;
+  background-position-y: -40px !important;
+  padding-bottom: 17rem !important;
+  margin-bottom: -210px !important;
+}
+.ncaaf-front-football-stats .ncaaf-stats-page {
+  padding-bottom: 27rem !important;
+  margin-bottom: -330px !important;
+}
+.ncaaf-front-football-stats .select-season {
+  max-width: 150px !important;
+}
+.ncaaf-front-football-stats .live-btn {
+  min-width: 136px !important;
+}
+.ncaaf-front-football-stats .week-select {
+  max-width: 118px !important;
+}
+.ncaaf-front-football-stats .week-select2 {
+  max-width: 110px !important;
+}
+.ncaaf-front-football-stats .week-select3 {
+  max-width: 182px !important;
+}
+.min-w-280 {
+  min-width: 280px !important;
+}
+.fantasy-rk-name-custom-height {
+  height: 73px;
+  min-height: 73px;
+}
+.rk-text {
+  min-width: 46.61px;
+}
+.ncaaf-front-football-stats .table-text-2 {
+  width: 930px !important;
+  min-height: 59px;
+  top: -58px;
+}
+.ncaaf-front-football-stats .table-text-3 {
+  min-height: 59px;
+  top: -58px;
+}
+.ncaaf-front-football-stats .table-text-4 {
+  min-height: 59px;
+  top: -58px;
+}
+.ncaaf-front-football-stats .table-text-5 {
+  min-height: 59px;
+  top: -58px;
+}
+.custom-max-height-fantasy-table {
+  max-height: 60px;
+}
+.ncaaf-front-football-stats .border-custom-after {
+  min-height: 60px !important;
+}
+.ncaaf-front-football-stats .border-custom-after::after {
+  bottom: 0px !important;
+}
+.ncaaf-front-football-stats .custom-max-height-fantasy-table::after {
+  bottom: -1px !important;
+}
+.ncaaf-front-football-stats .fantasy-stats .table > thead > tr > th {
+  min-width: 59px !important;
+}
+.fantasy-yds-custom-width {
+  width: 68px !important;
+  min-width: 68px !important;
+}
+.ncaaf-front-football-stats .fantasy-stats .table > tbody > tr > td {
+  line-height: 43px;
+  height: 60px !important;
+}
+.ncaaf-front-football-stats .fantasy-stats .table > tbody > tr {
+  border-bottom: 1px solid var(--color-grey) !important;
+}
+.vh-50 {
+  min-height: 50vh;
+}
+.bg-gray-123 {
+  background-color: #dedede !important;
+}
+.player-statistics-table {
+  width: 98% !important;
+  margin: auto;
+}
+.player-statistics-table thead tr th {
+  height: 46px !important;
+  color: var(--color-white) !important;
+}
+.player-statistics-table::after {
+  height: 46px !important;
+}
+.ncaaf-front-football-stats .table_heading {
+  min-width: 412px !important;
+  max-width: 412px !important;
+  background-size: 100% 100% !important;
+  min-height: 68px !important;
+}
+.custom-width-97 {
+  width: 97%;
+}
+.ncaaf-front-football-stats .nav_tabs_btn:focus-visible {
+  outline: unset;
+}
+.lh-15 {
+  line-height: 15px;
+}
+.table-heading-bg {
+  top: -6px;
+  z-index: 0;
+  margin-left: -34px;
+}
+.active-nav-btn-blue-scale {
+  padding: 17.5px 65px !important;
+}
+.ncaaf_team_bg {
+  margin-bottom: -205px !important;
+}
+.pb-326 {
+  padding-bottom: 326px;
+}
+.ncaaf_leader_table_bg {
+  background-position-y: -11% !important;
+  background-position-x: center !important;
+  background-color: #1a1a1a !important;
+}
+.width-60 {
+  width: 60px;
+}
+.custom-width-name {
+  min-width: 250px;
+  max-width: 250px;
+}
+.ncaaf-team-detail {
+  min-height: 50vh !important;
+}
+.ncaaf-team-detail::after {
+  display: none !important;
+}
+.team_detail_video .bg-dotted-img {
+  display: none !important;
+}
+.american-standings-table {
+  width: 433px;
+}
+.team-detail-top-headings .team_detail_top_heading_content {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.team-table {
+  overflow-y: scroll;
+  background-color: #082035 !important;
+}
+.videos-match-preview {
+  margin-top: -110px !important;
+}
+.videos-match-preview .video_img1 {
+  max-width: 100% !important;
+}
+.videos-match-preview .prodcast-pause-img {
+  right: 48% !important;
+}
+.team-detail-propspects {
+  min-width: 305px !important;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #40acef !important;
+  border-radius: 10px !important;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #40acef !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--color-grey) !important;
+  border-radius: 4px !important;
+}
+.overflow-y-auto {
+  overflow-y: unset !important;
+  max-height: 100% !important;
+}
+
+@media (min-width: 1914px) {
+  .team-detail-propspects {
+    min-width: 365px !important;
+  }
+}
+@media (min-width: 1500px) {
+  .regular-season-table .team-table,
+  .team-detail-propspects .team-table {
+    overflow-y: auto !important;
+  }
+  .team-detail-propspects .overflow-y-auto {
+    overflow-y: unset !important;
+  }
+}
+@media (min-width: 1800px) {
+  .container-standings {
+    min-width: 1728px !important;
+    max-width: 1728px !important;
+  }
+  .conference-text {
+    padding-left: 0px !important;
+  }
+  .custom-width-name {
+    min-width: 220px;
+    max-width: 220px;
+  }
+  .min-width-392 {
+    min-width: 392px;
+  }
+  .team-detail-highlight .highlight-img {
+    height: 410px !important;
+  }
+  .team-table {
+    max-height: 640px;
+  }
+}
+@media (max-width: 1799.98px) {
+  .min-width-392 {
+    min-width: 352px;
+  }
+  .ncaaf-front-football-stats .table-text-2 {
+    width: 880px !important;
+  }
+  .team-detail-highlight .highlight-img {
+    height: 370px !important;
+  }
+  .team-table {
+    max-height: 620px;
+  }
+  .team-detail-propspects {
+    min-width: 295px !important;
+  }
+}
+@media (max-width: 1699.98px) {
+  .ncaaf-front-player-left {
+    width: 468px !important;
+    max-width: 468px !important;
+    top: 350px !important;
+    left: 1% !important;
+  }
+  .american-standings-table {
+    width: unset;
+  }
+  .min-width-392 {
+    min-width: 312px;
+  }
+  .team-table {
+    max-height: 550px;
+  }
+}
+@media (max-width: 1599.98px) {
+  .standing-bg-2020 {
+    left: 31%;
+  }
+  .standing-bg-2020-shadow {
+    left: 31.5%;
+  }
+  .conference-text {
+    padding-left: 40px !important;
+  }
+  .ncaaf-front-player-left {
+    left: 6% !important;
+    max-width: 388px !important;
+    top: 390px !important;
+  }
+  .ncaaf-front-player-right {
+    top: 220px !important;
+    right: 12% !important;
+    max-width: 250px !important;
+  }
+  .team-table {
+    max-height: 540px;
+  }
+  .team-detail-propspects {
+    min-width: 275px !important;
+  }
+}
+@media (max-width: 1499.98px) {
+  .ncaaf-front-player-left {
+    left: 3% !important;
+  }
+  .player-statistics-table::after {
+    width: 103.9% !important;
+  }
+  .team-table {
+    max-height: 510px;
+  }
+  .min-width-392 {
+    min-width: 252px;
+  }
+  .team-detail-propspects {
+    min-width: unset !important;
+  }
+  .videos-match-preview {
+    margin-top: -70px !important;
+  }
+  .regular-season-table .team-table {
+    max-height: 346px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .standing-bg-2020 {
+    left: 28%;
+  }
+  .standing-bg-2020-shadow {
+    left: 28.5%;
+  }
+  .ncaaf-front-player-left {
+    left: 8% !important;
+    top: 390px !important;
+  }
+  .player-statistics-table::after {
+    width: 104% !important;
+  }
+  .videos-match-preview {
+    margin-top: -40px !important;
+  }
+  .regular-season-table .team-table {
+    max-height: unset !important;
+  }
+  .team-table {
+    overflow-y: unset;
+  }
+}
+@media (max-width: 1299.98px) {
+  .ncaaf-front-player-left {
+    left: 3% !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .standing-bg-2020 {
+    font-size: 181px;
+  }
+  .standing-bg-2020-shadow {
+    font-size: 181px;
+  }
+  .lh-70 {
+    line-height: 50px !important;
+  }
+  .glossay-data-table {
+    min-width: 452px;
+    max-width: 452px;
+  }
+  .standingsIAbtn {
+    min-width: 218px !important;
+  }
+  .IAstanding-table .table_heading {
+    transform: translate(-21px, 6px) !important;
+  }
+  .conference-text {
+    padding-left: 0px !important;
+  }
+  .IA-table-text2 {
+    top: -45px !important;
+    left: 11px !important;
+  }
+  .IA-table-text3 {
+    top: -45px !important;
+  }
+  .IA-table-text4 {
+    top: -45px !important;
+  }
+  .IA-table-text3 {
+    margin-left: -5px;
+  }
+  .IA-table-text4 {
+    margin-left: -4px;
+    min-width: 257px !important;
+  }
+  .conference {
+    left: 10px !important;
+  }
+  .overall {
+    min-width: 540px !important;
+  }
+  .ncaaf-front-player-left {
+    left: 70px !important;
+    top: 460px !important;
+    max-width: 278px !important;
+  }
+  .ncaaf-front-player-right {
+    top: 260px !important;
+    right: 4% !important;
+    max-width: 200px !important;
+  }
+  .player-statistics-table::after {
+    width: 105% !important;
+  }
+  .ncaaf-front-football-stats .table_heading {
+    min-width: 382px !important;
+    max-width: 382px !important;
+  }
+  .pb-326 {
+    padding-bottom: 226px;
+  }
+  .min-width-392 {
+    min-width: 100%;
+  }
+  .team-table {
+    max-height: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .standing-bg-2020 {
+    font-size: 151px;
+    top: -27%;
+    left: 25%;
+  }
+  .standing-bg-2020-shadow {
+    font-size: 151px;
+    top: -22%;
+    left: 25.5%;
+  }
+  .standingIA-table .table-img {
+    max-width: 33px !important;
+  }
+  .lh-60 {
+    line-height: 50px !important;
+  }
+  .IAstanding-table .table_heading {
+    min-width: 446px;
+    max-width: 446px;
+    margin-bottom: -7px;
+    min-height: 70px;
+  }
+  .custom-th-min-width {
+    min-width: 338px;
+  }
+  .glossay-data-table {
+    min-width: 345px;
+    max-width: 345px;
+  }
+  .standingsIAbtn {
+    padding: 16px 43.4px !important;
+  }
+  .ncaaf-front-football-stats .ncaaf-standings-page {
+    background-position-x: center !important;
+    background-position-y: center !important ;
+  }
+  .player-statistics-table::after {
+    width: 106% !important;
+    left: -20px !important;
+  }
+  .ncaaf-front-football-stats .table_heading {
+    min-width: 322px !important;
+    max-width: 322px !important;
+  }
+  .ncaaf-front-football-stats .table_heading {
+    min-height: 62px !important;
+  }
+  .min-width-392 {
+    min-width: 312px;
+  }
+}
+@media (max-width: 767.98px) {
+  .standing-bg-2020 {
+    font-size: 121px;
+    top: -15%;
+    left: 22%;
+  }
+  .standing-bg-2020-shadow {
+    font-size: 121px;
+    top: -12%;
+    left: 22.8%;
+  }
+  .standingsIAbtn {
+    min-width: 178px !important;
+    padding: 12px 26px !important;
+  }
+  .IAstanding-table .table_heading {
+    transform: translate(-7px, 6px);
+  }
+  .ncaaf-front-football-stats .select-season {
+    max-width: 350px !important;
+  }
+  .ncaaf-front-football-stats .live-btn {
+    min-width: 0px !important;
+  }
+  .ncaaf-front-football-stats .week-select {
+    max-width: 350px !important;
+  }
+  .ncaaf-front-football-stats .week-select2 {
+    max-width: 350px !important;
+  }
+  .ncaaf-front-football-stats .week-select3 {
+    max-width: 350px !important;
+  }
+  .fantasy-rk-name-custom-height {
+    height: 50px;
+    min-height: 50px;
+  }
+  .ncaaf-front-football-stats .table_heading {
+    min-height: 48px !important;
+  }
+  .standingAA-custom-content {
+    width: 274px !important;
+    min-width: 274px !important;
+    max-width: 274px !important;
+  }
+  .footer-leader-table-border-top {
+    border-top: 1px solid var(--color-grey);
+  }
+
+  .min-width-392 {
+    min-width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .standing-bg-2020 {
+    left: 15%;
+    top: -32%;
+  }
+  .standing-bg-2020-shadow {
+    left: 15.8%;
+    top: -28%;
+  }
+  .IAstanding-table .table_heading {
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 60px;
+  }
+  .custom-th-min-width {
+    min-width: 308px;
+  }
+  .glossay-data-table {
+    min-width: 308px;
+    max-width: 308px;
+  }
+  .standingIA-table .table-img {
+    max-width: 27px !important;
+  }
+  .standingsIAbtn {
+    min-width: 96% !important;
+  }
+  .lh-60 {
+    line-height: 45px !important;
+  }
+  .IA-table-text22 {
+    top: -42px !important;
+  }
+  .IA-table-text2 {
+    top: -42px !important;
+  }
+  .IA-table-text3 {
+    top: -42px !important;
+  }
+  .IA-table-text4 {
+    top: -42px !important;
+  }
+  .conference {
+    height: 41.52px !important;
+    left: 10px !important;
+    margin-left: -2px;
+  }
+  .rk-text {
+    min-width: 36.48px;
+  }
+  .ncaaf-front-football-stats .border-custom-after {
+    min-height: 51px !important;
+  }
+  .ncaaf-front-football-stats .min-w-280 {
+    min-width: 185px !important;
+  }
+  .ncaaf-front-football-stats .fantasy-stats .table > tbody > tr > td {
+    line-height: unset !important;
+    height: 51px !important;
+  }
+  .player-img-with-grey-border {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .player-statistics-table::after {
+    width: 108.2% !important;
+    left: -12px !important;
+  }
+  .player-statistics-table thead tr th {
+    height: 40px !important;
+  }
+  .player-statistics-table::after {
+    height: 40px !important;
+  }
+  .ncaaf-front-football-stats .table_heading {
+    min-width: 270px !important;
+    max-width: 270px !important;
+  }
+  .ncaaf-front-football-stats .nav_tabs_btn {
+    width: 50%;
+    max-width: 150px;
+  }
+  /* .ncaaf-front-football-stats .active-nav-btn-blue-scale {
+    transform: scale(1) skew(-21deg) !important;
+  } */
+  .pb-326 {
+    padding-bottom: 126px;
+  }
+  .ncaaf-team-detail {
+    min-height: 46vh !important;
+  }
+}
+@media (max-width: 424.98px) {
+  .standing-bg-2020 {
+    font-size: 81px;
+    top: -43%;
+    left: 25%;
+  }
+  .standing-bg-2020-shadow {
+    font-size: 81px;
+    top: -40%;
+    left: 25.8%;
+  }
+  .ncaaf-front-football-stats .nav_tabs_btn {
+    max-width: 130px;
+  }
+}
+@media (max-width: 374.98px) {
+  .IAstanding-table .table_heading {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .IAstanding-table .table_heading h2 {
+    font-size: 12px !important;
+  }
+  .custom-th-min-width {
+    min-width: 258px;
+  }
+  .glossay-data-table {
+    min-width: 258px;
+    max-width: 258px;
+  }
+  .standing-bg-2020 {
+    left: 21%;
+  }
+  .standing-bg-2020-shadow {
+    left: 21.8%;
+  }
+}
