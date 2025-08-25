@@ -2,8 +2,9 @@ const GlobalConfig = {
   SITE_NAME:
     "The NFL Draft, NFL Draft Logo, and NCAAF are copyright of the National Football League and in no way are owned by Cerberus Fantasy Sports LLC. This page is intended to provide links to Cerberus Fantasy Sports Draft coverage and is in no way affiliated with the Official NFL Draft site. For the official site please visit nfl.com or NCAA.com",
 
-  API_URL: "https://nodeserver.mydevfactory.com:9000/api/web/",
+  // API_URL: "https://nodeserver.mydevfactory.com:9000/api/web/",
   // 'API_URL': "http://localhost:9000/api/web/",
+  API_URL: "https://cerberusfantasysports.com/api/web/",
 
   // 'WEB_URL': "https://nodeserver.mydevfactory.com/projects/debarati/arghya/nfl/nfl-web/#/",
   //  'WEB_URL': "http://localhost:3000/projects/debarati/arghya/nfl/nfl-web#/",
