@@ -1,7 +1,7 @@
 var config = {
   base_url: "http://localhost",
   port: 9000,
-  file_path_start: "https://cerberusfantasysports.com:9000/uploads",
+  file_path_start: "https://cerberusfantasysports.com/api/uploads",
   secretKey: "hyrgqwjdfbw4534efqrwer2q38945765",
   websiteLink: "https://cerberusfantasysports.com/#/",
 
@@ -24,7 +24,7 @@ var config = {
     SUPPORT_EMAIL: "poulami.samanta@brainiuminfotech.com",
   },
   siteConfig: {
-    LOGO: "https://cerberusfantasysports.com:9000/static/logo.png",
+    LOGO: "https://cerberusfantasysports.com/api/static/logo.png",
     HEADERCOLOR: "#fff",
     FOOTERCOLOR: "#fff",
     SITENAME: "CFS",
