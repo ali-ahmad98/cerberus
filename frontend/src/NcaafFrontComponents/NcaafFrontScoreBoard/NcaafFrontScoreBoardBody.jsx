@@ -87,7 +87,7 @@ const NcaafFrontScoreBoardBody = () => {
     const curDay = getWeek(new Date().getDate(), new Date().getMonth() + 1);
 
     let returnDate = "";
-    weekListDate[curYear].forEach((element) => {
+    (weekListDate?.[curYear] || []).forEach((element) => {
       Object.values(element).forEach((val) => {
         val.forEach((d) => {
           if (curDay === d) {
@@ -152,7 +152,9 @@ const NcaafFrontScoreBoardBody = () => {
                     </option>
 
                     {ncaaWeekDropdownList.map((option) => (
-                      <option value={option.value}>{option.label}</option>
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -174,7 +176,7 @@ const NcaafFrontScoreBoardBody = () => {
                   allScoreList?.response_data.map((obj, index) =>
                     new Date(obj._id) < currentDate ? (
                       <div key={index} className="gamelog-table players-table">
-                        <div class="table-responsive px-4 position-relative table-bg-line">
+                        <div className="table-responsive px-4 position-relative table-bg-line">
                           <div className="container mt-3 pt-lg-3">
                             <div className="d-flex flex-column flex-sm-row align-items-sm-center pt-0 text-nowrap ncaaf-front-heading-bar pe-sm-4 frontscore-minus-mb    pb-1">
                               <div className="gameblog-headings d-flex align-items-center ms-4 ms-sm-0">
@@ -199,14 +201,14 @@ const NcaafFrontScoreBoardBody = () => {
                           </div>
                           <table className="table text-nowrap position-relative z-1 table_bg ms-3 mt-4 mb-0">
                             <thead>
-                              <tr class="py-4 text-uppercase height-70">
+                              <tr className="py-4 text-uppercase height-70">
                                 <th
-                                  class="white border-0 ps-4 ps-md-5 py-4"
+                                  className="white border-0 ps-4 ps-md-5 py-4"
                                   scope="col"
                                   colSpan={1}
                                 >
                                   <div className="d-flex align-items-center justify-content-between">
-                                    <h2 class="font-18 fw-semibold mb-0">{"Final"}</h2>
+                                    <h2 className="font-18 fw-semibold mb-0">{"Final"}</h2>
                                     <div className="font-18 fw-semibold d-flex align-items-center">
                                       <td className="border-0 mx-2">1</td>
                                       <td className="border-0 mx-2">2</td>
@@ -217,14 +219,14 @@ const NcaafFrontScoreBoardBody = () => {
                                   </div>
                                 </th>
                                 <th
-                                  class="font-18 fw-semibold white border-0 py-4 ps-5"
+                                  className="font-18 fw-semibold white border-0 py-4 ps-5"
                                   scope="col"
                                   colSpan={1}
                                 >
                                   TEAM INFORMATION
                                 </th>
                                 <th
-                                  class="font-18 fw-semibold white border-0 py-4"
+                                  className="font-18 fw-semibold white border-0 py-4"
                                   scope="col"
                                   colSpan={1}
                                 >
@@ -512,24 +514,23 @@ const NcaafFrontScoreBoardBody = () => {
           <div className="col-12">
             <div className="container">
               <div className="gamelog-table players-table">
-                <div class="table-responsive px-4 position-relative table-bg-line">
+                <div className="table-responsive px-4 position-relative table-bg-line">
                   {allScoreList &&
                     allScoreList.message === "Ncaa Score list" &&
                     allScoreList?.response_data.map((item) =>
-                      new Date(item._id) > currentDate ? (
-                        <>
-                          {item.doc.map((item, index) => (
+                      new Date(item._id) > currentDate
+                        ? item.doc.map((item, index) => (
                             <div key={index} className="wrapScroll">
                               <table className="table text-nowrap position-relative z-1 table_bg ms-3 mt-4 mb-0">
                                 <thead>
-                                  <tr class="py-4 text-uppercase">
+                                  <tr className="py-4 text-uppercase">
                                     <th
-                                      class="white border-0 ps-4 ps-sm-5 py-4 height-70 align-middle min-width-300 custom-width-500 vertical-align-middle"
+                                      className="white border-0 ps-4 ps-sm-5 py-4 height-70 align-middle min-width-300 custom-width-500 vertical-align-middle"
                                       scope="col"
                                       colSpan={1}
                                     >
                                       <div className="d-flex align-items-center justify-content-between">
-                                        <h2 class="font-20 fw-bold">
+                                        <h2 className="font-20 fw-bold">
                                           {addOneDayToDate(item.matchDate).toLocaleDateString(
                                             "en-us",
                                             { weekday: "long" }
@@ -563,7 +564,7 @@ const NcaafFrontScoreBoardBody = () => {
                                       </div>
                                     </th>
                                     <th
-                                      class="font-18 fw-light white border-0 py-4 height-70 align-middle"
+                                      className="font-18 fw-light white border-0 py-4 height-70 align-middle"
                                       scope="col"
                                       colSpan={1}
                                     >
@@ -679,11 +680,8 @@ const NcaafFrontScoreBoardBody = () => {
                                 </tbody>
                               </table>
                             </div>
-                          ))}
-                        </>
-                      ) : (
-                        ""
-                      )
+                          ))
+                        : ""
                     )}
                 </div>
               </div>

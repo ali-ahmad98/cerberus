@@ -1,3 +1,4 @@
+import React from "react";
 import { ordinal_suffix_of } from "../../service/GeneralFn";
 
 export const teamLeftBorderColor = ["red", "blue", "green", "orange"];

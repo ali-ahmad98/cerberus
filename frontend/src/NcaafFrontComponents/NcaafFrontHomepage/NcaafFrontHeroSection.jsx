@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import NcaafFrontVideoFantacyCard from "./NcaafFrontVideoFantacyCard";
 import RightArrowIcon from "../../Assets/NcaafFrontAssets/HomepageAssets/img/rightArrowIcon.png";
 import { getHomeBannerApi } from "../../service/homeService";

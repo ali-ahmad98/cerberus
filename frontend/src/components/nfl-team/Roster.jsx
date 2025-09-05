@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import NflHero from "../common/NflHero";
 import ScroreBoard from "../homepage/ScroreBoard";
 import RosterTable from "../roaster/RosterTable";
